@@ -17,7 +17,6 @@ body {
 
 #main {
   @include m.flex(center, center, row);
-  background: linear-gradient(to left, m.$left-grad, m.$right-grad);
   max-width: 600px;
   margin: 0 auto;
   margin-top: 35px;
@@ -25,6 +24,10 @@ body {
 
 #main-container {
   width: 80%;
+  background: linear-gradient(-120deg, m.$left-grad, m.$right-grad);
+  padding: 30px 20px;
+  border-radius: 30px;
+  box-shadow: -0px -0px 10px black, 0px 0px 10px black;
   @include m.flex(center, flex-start, column);
 
   & #period {
@@ -43,7 +46,7 @@ body {
   }
 
   & #temp-main {
-    margin: 20px 0;
+    margin: 10px 0;
     width: 100%;
     @include m.flex(space-between, center, row);
 
