@@ -202,8 +202,10 @@ body {
   display: flex;
 }
 
-#infos .info:not(last-child) {
-  border-bottom: 2px solid #fff;
+#infos .info:not(:last-child) {
+  border-bottom: 2px solid #191818;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 @media screen and (max-width: 450px) {

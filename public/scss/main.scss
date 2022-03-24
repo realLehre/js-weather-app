@@ -151,8 +151,10 @@ body {
     width: 100%;
     @include m.flex(space-between, flex-start, row);
 
-    &:not(last-child) {
-      border-bottom: 2px solid white;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+      border-bottom: 2px solid m.$right-grad;
+      padding-bottom: 5px;
     }
   }
 }
