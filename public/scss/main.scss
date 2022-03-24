@@ -79,6 +79,6 @@ body {
 
   & #location {
     width: 100%;
-    @include m.flex(space-between, center, row);
+    @include m.flex(center, center, row);
   }
 }
