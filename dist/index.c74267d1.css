@@ -151,7 +151,7 @@ body {
 
 #ad-info {
   max-width: 600px;
-  width: 95%;
+  width: 70%;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
@@ -179,6 +179,31 @@ body {
 .info-container p i {
   color: #eeb436;
   font-size: 1.3rem;
+}
+
+#infos {
+  width: 100%;
+  background: linear-gradient(-120deg, #313131, #191818);
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  display: flex;
+  box-shadow: 0 0 10px #0006, 0 0 10px #0006;
+}
+
+#infos .info {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+
+#infos .info:not(last-child) {
+  border-bottom: 2px solid #fff;
 }
 
 @media screen and (max-width: 450px) {
