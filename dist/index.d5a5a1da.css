@@ -32,14 +32,30 @@ body {
 
 #main {
   max-width: 800px;
-  margin: 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 #main-container {
+  width: 80%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   display: flex;
+}
+
+#main-container #period {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+#main-container #period h5 {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=index.d5a5a1da.css.map */

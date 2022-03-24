@@ -16,10 +16,20 @@ body {
 }
 
 #main {
-  margin: 0 auto;
+  @include m.flex(center, center, row);
   max-width: 800px;
 }
 
 #main-container {
+  width: 80%;
   @include m.flex(center, flex-start, column);
+
+  & #period {
+    width: 100%;
+    @include m.flex(space-between, center, row);
+
+    & h5 {
+      font-size: map-get(m.$font-sizes, heading);
+    }
+  }
 }
