@@ -2,10 +2,10 @@
 
 body {
   @include m.mainFont;
+  font-size: 10px;
   height: 100vh;
   width: 100%;
   color: white;
-  font-size: 10px;
   background: linear-gradient(to right, m.$left-grad, m.$right-grad);
 }
 
