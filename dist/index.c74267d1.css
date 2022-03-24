@@ -60,6 +60,7 @@ body {
 }
 
 #main-container #period p {
+  color: #c39839;
   font-family: Plus Jakarta Display, sans-serif;
   font-size: 1.1rem;
 }
