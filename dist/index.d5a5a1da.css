@@ -62,7 +62,7 @@ body {
 #main-container #period p {
   color: #eeb436;
   font-family: Merriweather, serif;
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 #main-container #temp-main {
@@ -70,6 +70,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 20px 0;
   display: flex;
 }
 

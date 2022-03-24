@@ -42,6 +42,7 @@ body {
   }
 
   & #temp-main {
+    margin: 20px 0;
     width: 100%;
     @include m.flex(space-between, center, row);
 
