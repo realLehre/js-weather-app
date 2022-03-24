@@ -113,7 +113,7 @@ body {
 
 #ad-info {
   @include m.flex(flex-start, flex-start, row);
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
   margin-top: 35px;
   width: 70%;
@@ -122,6 +122,7 @@ body {
 .info-container {
   width: 100%;
   font-size: map-get(m.$font-sizes, ad-weather-info);
+  margin-bottom: 50px;
 
   & p {
     width: 100%;
@@ -134,18 +135,30 @@ body {
     & i {
       color: m.$bright-orange;
       font-size: 1.3rem;
+      @include m.transition;
+
+      &.show {
+        transform: rotate(180deg);
+        transform-origin: center;
+      }
     }
   }
 }
 
-#infos {
+.infos {
   width: 100%;
   background: linear-gradient(-120deg, m.$left-grad, m.$right-grad);
-  padding: 10px 20px;
+  padding: 0px 20px;
   border-radius: 15px;
   box-shadow: -0px -0px 10px rgba(0, 0, 0, 0.4), 0px 0px 10px rgba(0, 0, 0, 0.4);
   @include m.flex(center, flex-start, column);
-  margin-bottom: 50px;
+  overflow: hidden;
+  @include m.transition;
+  height: 0;
+
+  &.show {
+    height: 250px;
+  }
 
   & .info {
     width: 100%;
@@ -155,6 +168,18 @@ body {
       margin-bottom: 10px;
       border-bottom: 2px solid m.$right-grad;
       padding-bottom: 5px;
+    }
+
+    &:first-child {
+      padding-top: 10px;
+    }
+    &:last-child {
+      padding-bottom: 10px;
+    }
+
+    & span {
+      @include m.secFont;
+      color: m.$bright-orange;
     }
   }
 }

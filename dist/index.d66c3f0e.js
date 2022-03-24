@@ -5,5 +5,9 @@ async function getWeather() {
 }
 getWeather().then((data)=>data
 );
+document.getElementById('ad-info-text').addEventListener('click', ()=>{
+    document.querySelector('.infos').classList.toggle('show');
+    document.querySelector('.fa-angle-up').classList.toggle('show');
+});
 
 //# sourceMappingURL=index.d66c3f0e.js.map
