@@ -51,23 +51,23 @@ body {
     @include m.flex(space-between, center, row);
 
     & .temp {
+      @include m.flex(space-between, flex-start, row);
       @include m.secFont;
       font-size: map-get(m.$font-sizes, page-name);
       font-size: 5rem;
       font-weight: 900;
 
-      & sup {
+      & span {
+        @include m.flex(space-between, flex-start, row);
         @include m.mainFont;
-        font-size: map-get(m.$font-sizes, weather-info);
-        font-size: 1.5rem;
-        margin-left: -15px;
+        font-size: 1.2rem;
         font-weight: 600;
         color: m.$bright-orange;
+        transform: translateY(20px);
 
-        & sub {
+        & span {
           font-size: 2rem;
-          margin-left: -6px;
-          transform: translateY(-20px);
+          transform: translateY(3px);
         }
       }
     }
@@ -85,7 +85,7 @@ body {
     width: 100%;
     @include m.flex(center, center, row);
     font-size: map-get(m.$font-sizes, info);
-    font-weight: 300;
+    font-weight: 400;
 
     & i {
       color: m.$bright-orange;
@@ -104,14 +104,13 @@ body {
         font-size: 4rem;
         font-weight: 900;
 
-        & sup {
-          font-size: 2rem;
-          margin-left: -13px;
-          font-weight: 600;
-          color: m.$bright-orange;
+        & span {
+          font-size: 1rem;
+          transform: translateY(15px);
 
-          & sub {
-            margin-left: -8px;
+          & span {
+            font-size: 1.8rem;
+            transform: translateY(0px);
           }
         }
       }
