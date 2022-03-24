@@ -47,7 +47,7 @@ body {
   }
 
   & #condition {
-    margin: 5px auto;
+    margin: 15px auto;
     margin-bottom: 0;
     @include m.flex(center, center, row);
     font-size: map-get(m.$font-sizes, info);
@@ -213,14 +213,38 @@ body {
     margin-right: 20px;
   }
   & .time {
-    font-size: map-get(m.$font-sizes, ad-weather-info);
+    font-size: 1rem;
+    font-weight: 300;
   }
 
   #{&}-img {
     width: 50px;
+    margin: 5px 0;
 
     & img {
       width: 100%;
+    }
+  }
+
+  & .temp {
+    @include m.flex(space-between, flex-start, row);
+    font-size: 1.3rem;
+    font-weight: 900;
+
+    & span {
+      @include m.flex(space-between, flex-start, row);
+      @include m.mainFont;
+      font-size: 0.6rem;
+      font-weight: 600;
+      color: m.$bright-orange;
+      margin-left: 3px;
+      transform: translateY(3px);
+
+      & span {
+        font-size: 0.9rem;
+        margin-left: 1px;
+        transform: translateY(2px);
+      }
     }
   }
 }

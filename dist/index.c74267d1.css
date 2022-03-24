@@ -74,7 +74,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 5px auto 0;
+  margin: 15px auto 0;
   font-family: Merriweather, serif;
   font-size: 1.1rem;
   display: flex;
@@ -269,15 +269,45 @@ body {
 }
 
 .weather .time {
-  font-size: .9rem;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .weather .weather-img {
   width: 50px;
+  margin: 5px 0;
 }
 
 .weather .weather-img img {
   width: 100%;
+}
+
+.weather .temp {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.3rem;
+  font-weight: 900;
+  display: flex;
+}
+
+.weather .temp span {
+  color: #eeb436;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 3px;
+  font-family: Roboto, sans-serif;
+  font-size: .6rem;
+  font-weight: 600;
+  display: flex;
+  transform: translateY(3px);
+}
+
+.weather .temp span span {
+  margin-left: 1px;
+  font-size: .9rem;
+  transform: translateY(2px);
 }
 
 @media screen and (max-width: 450px) {
