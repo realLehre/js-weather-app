@@ -31,7 +31,7 @@ body {
 }
 
 #main {
-  max-width: 650px;
+  max-width: 600px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -90,6 +90,14 @@ body {
 
 #main-container #temp-main .temp sup sub {
   margin-left: -5px;
+}
+
+#main-container #temp-main .temp-icon {
+  width: 100px;
+}
+
+#main-container #temp-main .temp-icon img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.d5a5a1da.css.map */

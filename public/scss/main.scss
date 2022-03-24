@@ -17,7 +17,7 @@ body {
 
 #main {
   @include m.flex(center, center, row);
-  max-width: 650px;
+  max-width: 600px;
   margin: 0 auto;
   margin-top: 35px;
 }
@@ -61,6 +61,14 @@ body {
         & sub {
           margin-left: -5px;
         }
+      }
+    }
+
+    & .temp-icon {
+      width: 100px;
+
+      & img {
+        width: 100%;
       }
     }
   }
