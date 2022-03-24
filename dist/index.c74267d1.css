@@ -32,6 +32,7 @@ body {
 
 #main {
   max-width: 600px;
+  width: 95%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -40,7 +41,7 @@ body {
 }
 
 #main-container {
-  width: 95%;
+  width: 100%;
   background: linear-gradient(-120deg, #313131, #191818);
   border-radius: 30px;
   flex-direction: column;
@@ -146,6 +147,20 @@ body {
 #main-container #location i {
   color: #eeb436;
   margin-right: 5px;
+}
+
+#ad-info {
+  max-width: 600px;
+  width: 95%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 35px auto 0;
+  display: flex;
+}
+
+#info-container {
+  width: 100%;
 }
 
 @media screen and (max-width: 450px) {

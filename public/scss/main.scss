@@ -20,10 +20,11 @@ body {
   max-width: 600px;
   margin: 0 auto;
   margin-top: 35px;
+  width: 95%;
 }
 
 #main-container {
-  width: 95%;
+  width: 100%;
   background: linear-gradient(-120deg, m.$left-grad, m.$right-grad);
   padding: 30px 20px;
   border-radius: 30px;
@@ -108,6 +109,18 @@ body {
       margin-right: 5px;
     }
   }
+}
+
+#ad-info {
+  @include m.flex(flex-start, flex-start, row);
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 35px;
+  width: 95%;
+}
+
+#info-container {
+  width: 100%;
 }
 
 @media screen and (max-width: 450px) {
