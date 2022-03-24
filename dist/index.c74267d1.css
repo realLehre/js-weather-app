@@ -155,13 +155,13 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 35px auto 0;
+  margin: 45px auto 0;
   display: flex;
 }
 
 .info-container {
   width: 90%;
-  margin: 0 auto 50px;
+  margin: 0 auto 30px;
   font-size: .9rem;
 }
 
@@ -172,7 +172,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-  font-family: Merriweather, serif;
+  font-family: Roboto, sans-serif;
   font-size: 1.1rem;
   display: flex;
 }
@@ -238,8 +238,18 @@ body {
 #morrow {
   max-width: 600px;
   width: 100%;
-  margin: 35px auto 0;
+  margin: 0 auto;
   overflow: hidden;
+}
+
+#morrow #morrow-weather-heading {
+  width: 100%;
+  color: #eeb436;
+  text-align: center;
+  margin: 0 auto 5px;
+  font-family: Roboto, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .morrow-weather {
@@ -332,6 +342,11 @@ body {
 
   #main-container #temp-main .temp-icon {
     width: 90px;
+  }
+
+  .info-container p {
+    margin-bottom: 15px;
+    font-size: .9rem;
   }
 }
 

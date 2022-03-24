@@ -115,7 +115,7 @@ body {
   @include m.flex(flex-start, flex-start, row);
   max-width: 500px;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 45px;
   width: 100%;
 }
 
@@ -123,12 +123,12 @@ body {
   width: 90%;
   font-size: map-get(m.$font-sizes, ad-weather-info);
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   & p {
     width: 100%;
     font-size: map-get(m.$font-sizes, info);
-    @include m.secFont;
+    @include m.mainFont;
     @include m.flex(space-between, center, row);
     cursor: pointer;
     margin-bottom: 10px;
@@ -189,9 +189,19 @@ body {
 #morrow {
   max-width: 600px;
   margin: 0 auto;
-  margin-top: 35px;
   width: 100%;
   overflow: hidden;
+
+  & #morrow-weather-heading {
+    width: 100%;
+    font-size: map-get(m.$font-sizes, info);
+    font-weight: 700;
+    color: m.$bright-orange;
+    @include m.mainFont;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5px;
+  }
 }
 
 .morrow-weather {
@@ -273,6 +283,13 @@ body {
       & .temp-icon {
         width: 90px;
       }
+    }
+  }
+
+  .info-container {
+    & p {
+      font-size: map-get(m.$font-sizes, ad-weather-info);
+      margin-bottom: 15px;
     }
   }
 }
