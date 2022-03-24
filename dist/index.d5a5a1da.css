@@ -20,6 +20,7 @@ body {
   width: 100%;
   color: #fff;
   background: linear-gradient(to right, #313131, #191818);
+  padding: 30px 20px;
   font-family: Nunito, sans-serif;
   font-size: 10px;
 }
