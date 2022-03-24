@@ -150,8 +150,8 @@ body {
 }
 
 #ad-info {
-  max-width: 400px;
-  width: 70%;
+  max-width: 500px;
+  width: 100%;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
@@ -160,8 +160,8 @@ body {
 }
 
 .info-container {
-  width: 100%;
-  margin-bottom: 50px;
+  width: 90%;
+  margin: 0 auto 50px;
   font-size: .9rem;
 }
 
@@ -196,6 +196,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin: 0 auto;
   padding: 0 20px;
   transition: all .5s ease-in-out;
   display: flex;

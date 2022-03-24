@@ -113,15 +113,16 @@ body {
 
 #ad-info {
   @include m.flex(flex-start, flex-start, row);
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
   margin-top: 35px;
-  width: 70%;
+  width: 100%;
 }
 
 .info-container {
-  width: 100%;
+  width: 90%;
   font-size: map-get(m.$font-sizes, ad-weather-info);
+  margin: 0 auto;
   margin-bottom: 50px;
 
   & p {
@@ -147,6 +148,7 @@ body {
 
 .infos {
   width: 100%;
+  margin: 0 auto;
   background: linear-gradient(-120deg, m.$left-grad, m.$right-grad);
   padding: 0px 20px;
   border-radius: 15px;
