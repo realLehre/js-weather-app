@@ -37,3 +37,10 @@ a {
 li {
   list-style: none;
 }
+
+@mixin flex($jus, $dir) {
+  display: flex;
+  justify-content: $jus;
+  align-items: center;
+  flex-direction: $dir;
+}

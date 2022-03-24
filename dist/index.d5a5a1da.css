@@ -30,8 +30,9 @@ body {
   font-size: 2rem;
 }
 
-i {
-  font-size: 3rem;
+#main {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=index.d5a5a1da.css.map */
