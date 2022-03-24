@@ -110,7 +110,57 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1.1rem;
+  font-weight: 300;
   display: flex;
+}
+
+#main-container #location i {
+  color: #eeb436;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  #app-name {
+    font-size: 2rem;
+  }
+
+  #main-container #temp-main .temp {
+    font-size: 4rem;
+    font-weight: 900;
+  }
+
+  #main-container #temp-main .temp sup {
+    color: #eeb436;
+    margin-left: -13px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  #main-container #temp-main .temp sup sub {
+    margin-left: -8px;
+  }
+
+  #main-container #temp-main .temp-icon {
+    width: 100px;
+  }
+
+  #main-container #temp-main .temp-icon img {
+    width: 100%;
+  }
+
+  #main-container #location {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    display: flex;
+  }
+
+  #main-container #location i {
+    color: #eeb436;
+    margin-right: 10px;
+  }
 }
 
 /*# sourceMappingURL=index.d5a5a1da.css.map */

@@ -83,5 +83,55 @@ body {
     width: 100%;
     @include m.flex(center, center, row);
     font-size: map-get(m.$font-sizes, info);
+    font-weight: 300;
+
+    & i {
+      color: m.$bright-orange;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #app-name {
+    font-size: 2rem;
+  }
+  #main-container {
+    & #temp-main {
+      & .temp {
+        font-size: 4rem;
+        font-weight: 900;
+
+        & sup {
+          font-size: 2rem;
+          margin-left: -13px;
+          font-weight: 600;
+          color: m.$bright-orange;
+
+          & sub {
+            margin-left: -8px;
+          }
+        }
+      }
+
+      & .temp-icon {
+        width: 100px;
+
+        & img {
+          width: 100%;
+        }
+      }
+    }
+
+    & #location {
+      width: 100%;
+      @include m.flex(center, center, row);
+      font-size: map-get(m.$font-sizes, info);
+
+      & i {
+        color: m.$bright-orange;
+        margin-right: 10px;
+      }
+    }
   }
 }
