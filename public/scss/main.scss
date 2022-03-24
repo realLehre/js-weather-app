@@ -1,1 +1,6 @@
 @use 'mech' as m;
+
+body {
+  background: linear-gradient(to right, m.$left-grad, m.$right-grad);
+  //   background: linear-gradient(to right, red, blue);
+}

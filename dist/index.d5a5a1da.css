@@ -13,4 +13,8 @@ li {
   list-style: none;
 }
 
+body {
+  background: linear-gradient(to right, #171616, #201f1f);
+}
+
 /*# sourceMappingURL=index.d5a5a1da.css.map */
