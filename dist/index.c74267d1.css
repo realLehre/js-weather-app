@@ -20,20 +20,13 @@ body {
   width: 100%;
   color: #fff;
   background: linear-gradient(to right, #313131, #191818);
+  font-family: Nunito, sans-serif;
   font-size: 10px;
 }
 
-#main {
-  height: 100%;
-  width: 100%;
-  padding: 30px;
-  font-family: Nunito, sans-serif;
+#app-name {
+  text-align: center;
   font-size: 2rem;
-}
-
-#main p {
-  font-family: Nunito, sans-serif;
-  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=index.c74267d1.css.map */

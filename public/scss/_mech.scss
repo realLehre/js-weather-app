@@ -22,6 +22,13 @@ $left-grad: #313131;
 $bright-orange: #c39839;
 $bright-blue: #3c78b0;
 
+// font sizes
+$font-sizes: (
+  'heading': 2rem,
+  'weather-name': 1.8rem,
+  'weather-info': 1.5rem,
+);
+
 a {
   text-decoration: none;
   color: white;

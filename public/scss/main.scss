@@ -1,6 +1,7 @@
 @use 'mech' as m;
 
 body {
+  @include m.mainFont;
   height: 100vh;
   width: 100%;
   color: white;
@@ -9,18 +10,6 @@ body {
 }
 
 #app-name {
-}
-
-#main {
-  height: 100%;
-  width: 100%;
-  padding: 30px 30px;
-  font-size: 2rem;
-  @include m.mainFont;
-
-  & p {
-    font-size: 1.5rem;
-    @include m.mainFont;
-  }
-  //   background: red;
+  font-size: map-get(m.$font-sizes, heading);
+  text-align: center;
 }
