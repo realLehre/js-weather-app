@@ -17,6 +17,7 @@ body {
 
 #main {
   @include m.flex(center, center, row);
+  background: linear-gradient(to left, m.$left-grad, m.$right-grad);
   max-width: 600px;
   margin: 0 auto;
   margin-top: 35px;
