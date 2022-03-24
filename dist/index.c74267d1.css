@@ -35,4 +35,11 @@ body {
   margin: 0 auto;
 }
 
+#main-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
 /*# sourceMappingURL=index.c74267d1.css.map */

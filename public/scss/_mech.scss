@@ -38,9 +38,9 @@ li {
   list-style: none;
 }
 
-@mixin flex($jus, $dir) {
+@mixin flex($jus, $pos, $dir) {
   display: flex;
   justify-content: $jus;
-  align-items: center;
+  align-items: $pos;
   flex-direction: $dir;
 }

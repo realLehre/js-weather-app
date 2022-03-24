@@ -19,3 +19,7 @@ body {
   margin: 0 auto;
   max-width: 800px;
 }
+
+#main-container {
+  @include m.flex(center, flex-start, column);
+}
