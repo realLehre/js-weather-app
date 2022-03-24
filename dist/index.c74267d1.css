@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Nunito:wght@400;600;700&display=swap";
+@import "https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,12 +18,22 @@ li {
 body {
   height: 100vh;
   width: 100%;
+  color: #fff;
   background: linear-gradient(to right, #313131, #191818);
+  font-size: 10px;
 }
 
 #main {
   height: 100%;
   width: 100%;
+  padding: 50px;
+  font-family: Plus Jakarta Display, sans-serif;
+  font-size: 2rem;
+}
+
+#main p {
+  font-family: Nunito, sans-serif;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=index.c74267d1.css.map */

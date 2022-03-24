@@ -3,11 +3,21 @@
 body {
   height: 100vh;
   width: 100%;
+  color: white;
+  font-size: 10px;
   background: linear-gradient(to right, m.$left-grad, m.$right-grad);
 }
 
 #main {
   height: 100%;
   width: 100%;
+  padding: 50px;
+  font-size: 2rem;
+  @include m.secFont;
+
+  & p {
+    font-size: 1.5rem;
+    @include m.mainFont;
+  }
   //   background: red;
 }
