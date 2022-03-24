@@ -6,6 +6,7 @@ body {
   height: 100%;
   width: 100%;
   padding: 30px 20px;
+  padding-bottom: 20px;
   color: white;
   background: linear-gradient(to right, m.$left-grad, m.$right-grad);
 }
@@ -256,6 +257,16 @@ body {
         transform: translateY(2px);
       }
     }
+  }
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: map-get(m.$font-sizes, ad-weather-info);
+
+  & a {
+    color: m.$bright-orange;
   }
 }
 

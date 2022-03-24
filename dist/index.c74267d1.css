@@ -20,7 +20,7 @@ body {
   width: 100%;
   color: #fff;
   background: linear-gradient(to right, #313131, #191818);
-  padding: 30px 20px;
+  padding: 30px 20px 20px;
   font-family: Roboto, sans-serif;
   font-size: 10px;
 }
@@ -318,6 +318,16 @@ body {
   margin-left: 1px;
   font-size: .9rem;
   transform: translateY(2px);
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: .9rem;
+}
+
+footer a {
+  color: #eeb436;
 }
 
 @media screen and (max-width: 450px) {
