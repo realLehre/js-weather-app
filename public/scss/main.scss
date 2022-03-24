@@ -53,12 +53,14 @@ body {
     & .temp {
       @include m.secFont;
       font-size: map-get(m.$font-sizes, page-name);
+      font-size: 5rem;
       font-weight: 900;
 
       & sup {
         @include m.mainFont;
         font-size: map-get(m.$font-sizes, weather-info);
-        margin-left: -8px;
+        font-size: 3rem;
+        margin-left: -15px;
         font-weight: 600;
         color: m.$bright-orange;
 
@@ -80,5 +82,6 @@ body {
   & #location {
     width: 100%;
     @include m.flex(center, center, row);
+    font-size: map-get(m.$font-sizes, info);
   }
 }
