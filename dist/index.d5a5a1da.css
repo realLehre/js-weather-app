@@ -159,8 +159,26 @@ body {
   display: flex;
 }
 
-#info-container {
+.info-container {
   width: 100%;
+  font-size: .9rem;
+}
+
+.info-container p {
+  width: 100%;
+  cursor: pointer;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: Merriweather, serif;
+  font-size: 1.1rem;
+  display: flex;
+}
+
+.info-container p i {
+  color: #eeb436;
+  font-size: 1.3rem;
 }
 
 @media screen and (max-width: 450px) {

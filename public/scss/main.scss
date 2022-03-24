@@ -119,8 +119,23 @@ body {
   width: 95%;
 }
 
-#info-container {
+.info-container {
   width: 100%;
+  font-size: map-get(m.$font-sizes, ad-weather-info);
+
+  & p {
+    width: 100%;
+    font-size: map-get(m.$font-sizes, info);
+    @include m.secFont;
+    @include m.flex(space-between, center, row);
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    & i {
+      color: m.$bright-orange;
+      font-size: 1.3rem;
+    }
+  }
 }
 
 @media screen and (max-width: 450px) {
