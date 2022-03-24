@@ -133,6 +133,10 @@ body {
     font-size: 2rem;
   }
 
+  #main-container {
+    width: 95%;
+  }
+
   #main-container #temp-main .temp {
     font-size: 4rem;
     font-weight: 900;
