@@ -1,5 +1,5 @@
-@import "https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Nunito:wght@400;600;700&display=swap";
-@import "https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,7 +21,7 @@ body {
   color: #fff;
   background: linear-gradient(to right, #313131, #191818);
   padding: 30px 20px;
-  font-family: Nunito, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 10px;
 }
 
@@ -60,8 +60,8 @@ body {
 }
 
 #main-container #period p {
-  color: #c39839;
-  font-family: Plus Jakarta Display, sans-serif;
+  color: #eeb436;
+  font-family: Merriweather, serif;
   font-size: 1rem;
 }
 
@@ -74,8 +74,21 @@ body {
 }
 
 #main-container #temp-main .temp {
-  font-family: Plus Jakarta Display, sans-serif;
-  font-size: 2rem;
+  font-family: Merriweather, serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+#main-container #temp-main .temp sup {
+  color: #eeb436;
+  margin-left: -8px;
+  font-family: Roboto, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#main-container #temp-main .temp sup sub {
+  margin-left: -5px;
 }
 
 /*# sourceMappingURL=index.c74267d1.css.map */

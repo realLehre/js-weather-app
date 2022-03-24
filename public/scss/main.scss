@@ -47,8 +47,20 @@ body {
 
     & .temp {
       @include m.secFont;
-      font-size: map-get(m.$font-sizes, heading);
-      //   font-weight: 600;
+      font-size: map-get(m.$font-sizes, page-name);
+      font-weight: 900;
+
+      & sup {
+        @include m.mainFont;
+        font-size: map-get(m.$font-sizes, weather-info);
+        margin-left: -8px;
+        font-weight: 600;
+        color: m.$bright-orange;
+
+        & sub {
+          margin-left: -5px;
+        }
+      }
     }
   }
 }

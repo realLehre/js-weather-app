@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Nunito:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 
-@import url('https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
 
 * {
   margin: 0;
@@ -9,17 +9,17 @@
 }
 
 @mixin mainFont {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 @mixin secFont {
-  font-family: 'Plus Jakarta Display', sans-serif;
+  font-family: 'Merriweather', serif;
 }
 
 // colors
 $right-grad: #191818;
 $left-grad: #313131;
-$bright-orange: #c39839;
+$bright-orange: #eeb436;
 $bright-blue: #3c78b0;
 
 // font sizes
