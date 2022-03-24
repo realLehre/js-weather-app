@@ -46,8 +46,19 @@ body {
   }
 
   & #condition {
-    margin: 10px auto;
+    margin: 5px auto;
+    margin-bottom: 0;
     @include m.flex(center, center, row);
+    font-size: map-get(m.$font-sizes, info);
+    @include m.secFont;
+    & i {
+      color: m.$bright-orange;
+      margin-right: 5px;
+    }
+
+    & .condition-text {
+      font-weight: 300;
+    }
   }
 
   & #temp-main {
@@ -90,11 +101,11 @@ body {
     width: 100%;
     @include m.flex(center, center, row);
     font-size: map-get(m.$font-sizes, info);
-    font-weight: 400;
-
+    font-weight: 300;
+    @include m.secFont;
     & i {
       color: m.$bright-orange;
-      margin-right: 10px;
+      margin-right: 5px;
     }
   }
 }

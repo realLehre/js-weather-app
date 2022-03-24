@@ -73,8 +73,19 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 10px auto;
+  margin: 5px auto 0;
+  font-family: Merriweather, serif;
+  font-size: 1.1rem;
   display: flex;
+}
+
+#main-container #condition i {
+  color: #eeb436;
+  margin-right: 5px;
+}
+
+#main-container #condition .condition-text {
+  font-weight: 300;
 }
 
 #main-container #temp-main {
@@ -126,14 +137,15 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-family: Merriweather, serif;
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 300;
   display: flex;
 }
 
 #main-container #location i {
   color: #eeb436;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 @media screen and (max-width: 450px) {
