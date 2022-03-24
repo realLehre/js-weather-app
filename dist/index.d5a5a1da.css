@@ -16,7 +16,7 @@ li {
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   color: #fff;
   background: linear-gradient(to right, #313131, #191818);
@@ -233,6 +233,51 @@ body {
 .infos .info span {
   color: #eeb436;
   font-family: Merriweather, serif;
+}
+
+#morrow {
+  max-width: 600px;
+  width: 100%;
+  margin: 35px auto 0;
+  overflow: hidden;
+}
+
+.morrow-weather {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-family: Merriweather, serif;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.weather {
+  background: linear-gradient(-120deg, #313131, #191818);
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 20px;
+  display: flex;
+  box-shadow: 0 0 10px #000;
+}
+
+.weather:not(:last-child) {
+  margin-right: 20px;
+}
+
+.weather .time {
+  font-size: .9rem;
+}
+
+.weather .weather-img {
+  width: 50px;
+}
+
+.weather .weather-img img {
+  width: 100%;
 }
 
 @media screen and (max-width: 450px) {
