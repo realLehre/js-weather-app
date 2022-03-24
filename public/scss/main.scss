@@ -8,12 +8,15 @@ body {
   background: linear-gradient(to right, m.$left-grad, m.$right-grad);
 }
 
+#app-name {
+}
+
 #main {
   height: 100%;
   width: 100%;
-  padding: 50px;
+  padding: 30px 30px;
   font-size: 2rem;
-  @include m.secFont;
+  @include m.mainFont;
 
   & p {
     font-size: 1.5rem;
