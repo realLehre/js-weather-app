@@ -40,7 +40,7 @@ body {
 }
 
 #main-container {
-  width: 80%;
+  width: 95%;
   background: linear-gradient(-120deg, #313131, #191818);
   border-radius: 30px;
   flex-direction: column;
@@ -131,10 +131,6 @@ body {
 @media screen and (max-width: 450px) {
   #app-name {
     font-size: 2rem;
-  }
-
-  #main-container {
-    width: 95%;
   }
 
   #main-container #temp-main .temp {
