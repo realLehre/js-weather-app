@@ -1,1 +1,1 @@
-{"mappings":"","sources":["dist/index.c74267d1.css","dist/public/scss/main.scss"],"sourcesContent":["\n\n",null],"names":[],"version":3,"file":"index.d5a5a1da.css.map","sourceRoot":"/__parcel_source_root/"}
+{"mappings":"AEAA","sources":["dist/index.c74267d1.css","dist/public/scss/main.scss","dist/public/scss/_mech.scss"],"sourcesContent":["* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n","@use 'mech' as m;\r\n",null],"names":[],"version":3,"file":"index.d5a5a1da.css.map","sourceRoot":"/__parcel_source_root/"}

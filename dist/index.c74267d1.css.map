@@ -1,1 +1,1 @@
-{"mappings":"","sources":["public/scss/main.scss"],"sourcesContent":[null],"names":[],"version":3,"file":"index.c74267d1.css.map","sourceRoot":"/__parcel_source_root/"}
+{"mappings":"ACAA","sources":["public/scss/main.scss","public/scss/_mech.scss"],"sourcesContent":["@use 'mech' as m;\r\n",null],"names":[],"version":3,"file":"index.c74267d1.css.map","sourceRoot":"/__parcel_source_root/"}
