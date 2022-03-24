@@ -11,13 +11,14 @@ body {
 }
 
 #app-name {
-  font-size: map-get(m.$font-sizes, heading);
+  font-size: map-get(m.$font-sizes, page-name);
   text-align: center;
 }
 
 #main {
   @include m.flex(center, center, row);
   max-width: 800px;
+  margin-top: 35px;
 }
 
 #main-container {
@@ -30,6 +31,11 @@ body {
 
     & h5 {
       font-size: map-get(m.$font-sizes, heading);
+    }
+
+    & p {
+      font-size: map-get(m.$font-sizes, additional);
+      @include m.secFont;
     }
   }
 }
