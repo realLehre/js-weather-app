@@ -4,4 +4,13 @@
   padding: 0;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 /*# sourceMappingURL=index.c74267d1.css.map */
