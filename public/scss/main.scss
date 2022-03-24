@@ -17,7 +17,7 @@ body {
 
 #main {
   @include m.flex(center, center, row);
-  max-width: 800px;
+  max-width: 650px;
   margin: 0 auto;
   margin-top: 35px;
 }
@@ -31,7 +31,7 @@ body {
     @include m.flex(space-between, center, row);
 
     & h5 {
-      font-size: map-get(m.$font-sizes, heading);
+      font-size: map-get(m.$font-sizes, weather-name);
     }
 
     & p {
@@ -44,5 +44,11 @@ body {
   & #temp-main {
     width: 100%;
     @include m.flex(space-between, center, row);
+
+    & .temp {
+      @include m.secFont;
+      font-size: map-get(m.$font-sizes, heading);
+      //   font-weight: 600;
+    }
   }
 }
