@@ -59,13 +59,15 @@ body {
       & sup {
         @include m.mainFont;
         font-size: map-get(m.$font-sizes, weather-info);
-        font-size: 3rem;
+        font-size: 1.5rem;
         margin-left: -15px;
         font-weight: 600;
         color: m.$bright-orange;
 
         & sub {
-          margin-left: -13px;
+          font-size: 2rem;
+          margin-left: -6px;
+          transform: translateY(-20px);
         }
       }
     }
@@ -115,22 +117,7 @@ body {
       }
 
       & .temp-icon {
-        width: 100px;
-
-        & img {
-          width: 100%;
-        }
-      }
-    }
-
-    & #location {
-      width: 100%;
-      @include m.flex(center, center, row);
-      font-size: map-get(m.$font-sizes, info);
-
-      & i {
-        color: m.$bright-orange;
-        margin-right: 10px;
+        width: 90px;
       }
     }
   }
