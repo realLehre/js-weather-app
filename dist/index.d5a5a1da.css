@@ -69,6 +69,14 @@ body {
   font-size: .8rem;
 }
 
+#main-container #condition {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  display: flex;
+}
+
 #main-container #temp-main {
   width: 100%;
   flex-direction: row;

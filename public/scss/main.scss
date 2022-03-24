@@ -45,6 +45,11 @@ body {
     }
   }
 
+  & #condition {
+    margin: 10px auto;
+    @include m.flex(center, center, row);
+  }
+
   & #temp-main {
     margin: 10px 0;
     width: 100%;
