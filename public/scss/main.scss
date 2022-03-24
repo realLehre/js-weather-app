@@ -14,3 +14,7 @@ body {
   font-size: map-get(m.$font-sizes, heading);
   text-align: center;
 }
+
+i {
+  font-size: 3rem;
+}

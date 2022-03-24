@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="public/scss/main.scss" />
     <link rel="stylesheet" href="dist/index.c74267d1.css" />
     <title>Weather App</title>
@@ -13,7 +20,26 @@
       <h5>Weather Forecast App</h5>
     </div>
 
-    <section id="main"></section>
+    <section id="main">
+      <div id="main-container">
+        <div id="period">
+          <h5>Today</h5>
+          <p>Sat, 3 Aug</p>
+        </div>
+
+        <div id="temp-main">
+          <div class="temp">30</div>
+          <div class="temp-icon"></div>
+        </div>
+
+        <div id="location">
+          <i class="fa fa-map-marker-alt"></i>
+          <div class="location-name">
+            Lagos, Nigeria. <span id="lat">Lat: 54</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="public/localstorage.js"></script>
     <script src="public/weather.js"></script>
