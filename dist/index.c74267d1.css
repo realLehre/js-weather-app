@@ -35,7 +35,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 35px;
+  margin: 35px auto 0;
   display: flex;
 }
 
@@ -63,6 +63,14 @@ body {
   color: #c39839;
   font-family: Plus Jakarta Display, sans-serif;
   font-size: 1.1rem;
+}
+
+#main-container #temp-main {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
 }
 
 /*# sourceMappingURL=index.c74267d1.css.map */

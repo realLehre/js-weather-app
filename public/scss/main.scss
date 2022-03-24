@@ -18,6 +18,7 @@ body {
 #main {
   @include m.flex(center, center, row);
   max-width: 800px;
+  margin: 0 auto;
   margin-top: 35px;
 }
 
@@ -38,5 +39,10 @@ body {
       @include m.secFont;
       color: m.$bright-orange;
     }
+  }
+
+  & #temp-main {
+    width: 100%;
+    @include m.flex(space-between, center, row);
   }
 }
