@@ -1,0 +1,1 @@
+{"mappings":"ACAA","sources":["index.f69c96cf.css","public/scss/main.scss"],"sourcesContent":["body {\n  background: #00f;\n}\n\n/*# sourceMappingURL=index.f69c96cf.css.map */\n","body {\r\n  background: blue;\r\n}\r\n"],"names":[],"version":3,"file":"index.f69c96cf.css.map"}

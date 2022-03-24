@@ -1,0 +1,1 @@
+{"mappings":"ACAA","sources":["dist/index.c74267d1.css","dist/public/scss/main.scss"],"sourcesContent":["body {\n  background: red;\n}\n\n","body {\r\n  background: red;\r\n}\r\n"],"names":[],"version":3,"file":"index.d5a5a1da.css.map","sourceRoot":"/__parcel_source_root/"}
