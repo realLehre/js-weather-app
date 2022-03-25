@@ -49,18 +49,21 @@ document.getElementById('ad-info-text').addEventListener('click', () => {
     document.querySelector('.fa-angle-up').classList.toggle('show');
 })
 
-// function saveToLocalstorage(city){
-//     let passedCity = city;
-//     getLocalstorage(passedCity);
+// date
 
-//    localStorage.setItem('city', city);     
-// }
+const dateToday = document.getElementById('date-today');
 
-// function getLocalstorage(city){
-//     return localStorage.getItem('city')
-//         ? localStorage.getItem('Lagos')
-//         : localStorage.getItem(city)
-// }
+const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
+const todayDay = new Date().getDay();
+const dayName = days[todayDay];
+
+const todayDate = new Date().getDate();
+
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+const todayMonth = new Date().getMonth();
+const monthName = months[todayMonth];
+
+dateToday.innerHTML = `<p id="date-today">${dayName}, ${todayDate} ${monthName}</p>`;
 
 
 

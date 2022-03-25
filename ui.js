@@ -1,6 +1,5 @@
 class UI{
     constructor(){
-        this.dateToday = document.getElementById('date-today');
         this.conditionText = document.querySelector('.condition-text');
         this.temperature = document.querySelector('.temp');
         this.icon = document.getElementById('temp-icon');
@@ -11,18 +10,6 @@ class UI{
     }
 
     display(data) {
-        const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
-        const todayDay = new Date().getDay();
-        const dayName = days[todayDay];
-        
-        const todayDate = new Date().getDate();
-
-        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
-        const todayMonth = new Date().getMonth();
-        const monthName = months[todayMonth];
-    
-        this.dateToday.innerHTML = `<p id="date-today">${dayName}, ${todayDate} ${monthName}</p>`;
-
         const current = data.current;
         const location = data.location;
 
