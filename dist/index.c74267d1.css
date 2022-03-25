@@ -59,21 +59,24 @@ body {
   height: 50px;
   z-index: 10;
   position: absolute;
-  top: 20px;
-  right: 10px;
+  top: 25px;
+  right: -5px;
 }
 
 .input-container .close-btn .dash {
   width: 30px;
   height: 3px;
   background: red;
+  position: absolute;
 }
 
 .input-container .close-btn .dash.dash-1 {
+  top: -1px;
   transform: rotate(45deg);
 }
 
 .input-container .close-btn .dash.dash-2 {
+  left: -1.5px;
   transform: rotate(-45deg);
 }
 
