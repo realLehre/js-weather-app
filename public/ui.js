@@ -17,11 +17,11 @@ class UI{
         
         const todayDate = new Date().getDate();
 
-        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
         const todayMonth = new Date().getMonth();
         const monthName = months[todayMonth];
     
-        this.dateToday.innerHTML = `<p id="date-today">${dayName}, ${todayDate} ${monthName}</p>`
+        this.dateToday.innerHTML = `<p id="date-today">${dayName}, ${todayDate} ${monthName}</p>`;
 
         const current = data.current;
         const location = data.location;
