@@ -12,9 +12,15 @@ locationBtn.addEventListener('click', () => {
 })
 
 document.getElementById('city-form').addEventListener('submit', (e) => {
-    const value = e.target.value;
+    const input = document.getElementById('city-form-input');
 
-    console.log(value);
+    console.log(input.value);
+
+    input.value = '';
+
+    modal.classList.remove('open');
+    e.preventDefault()
+   
 })
 
 

@@ -7,8 +7,11 @@ locationBtn.addEventListener('click', ()=>{
     modal.classList.add('open');
 });
 document.getElementById('city-form').addEventListener('submit', (e)=>{
-    const value = e.target.value;
-    console.log(value);
+    const input = document.getElementById('city-form-input');
+    console.log(input.value);
+    input.value = '';
+    modal.classList.remove('open');
+    e.preventDefault();
 });
 document.querySelector('.close-btn').addEventListener('click', ()=>{
     modal.classList.remove('open');
