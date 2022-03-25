@@ -23,6 +23,10 @@ body {
   z-index: 10;
 }
 
+.input-container {
+  background: white;
+}
+
 #app-name {
   font-size: map-get(m.$font-sizes, page-name);
   text-align: center;
