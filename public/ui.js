@@ -5,7 +5,6 @@ class UI{
         this.icon = document.getElementById('temp-icon');
         this.latitude = document.getElementById('lat');
         this.location = document.querySelector('.location-name');
-        
         this.additionInfo = document.querySelector('.infos');
         this.morrowWeather = document.querySelector('.morrow-weather');
     }
@@ -13,11 +12,17 @@ class UI{
     display(data) {
         const current = data.current;
         const location = data.location;
+
         this.conditionText.textContent = data.current.condition.text;
+
         this.temperature.innerHTML = `${current.temp_c} <span>o <span>C</span></span>`;
+
         this.icon.setAttribute('src', data.current.condition.icon);
-        this.latitude.innerHTML = `Lat: ${location.lat}`
-        this.location.innerHTML = `${location.name}, ${location.country}. <span id="lat">${this.latitude.innerHTML}</span>`
+
+        this.latitude.innerHTML = `Lat: ${location.lat}`;
+
+        this.location.innerHTML = `${location.name}, ${location.country}. <span id="lat">${this.latitude.innerHTML}</span>`;
+
         this.additionInfo.innerHTML = `
             <li class="info cloud">Cloud <span id="cloud-num">${current.cloud}</span></li>
             <li class="info uv">UV <span id="uv-num">${current.uv}</span></li>
