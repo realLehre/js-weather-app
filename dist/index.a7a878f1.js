@@ -24,13 +24,13 @@ class UI {
                 Wind Degree <span id="wind-degree-num">${current.wind_degree}</span>
             </li>
             <li class="info wind-speed">
-                Wind Speed <span id="wind-speed-num">5.8<span>km/h</span></span>
+                Wind Speed <span id="wind-speed-num">${current.wind_kph}<span>km/h</span></span>
             </li>
             <li class="info wind-dir">
-                Wind Direction <span id="wind-dir-num">SSW</span>
+                Wind Direction <span id="wind-dir-num">${current.wind_dir}</span>
             </li>
             <li class="info pressure">
-                Pressure <span id="pressure-num">29.84 <span>in</span></span>
+                Pressure <span id="pressure-num">${current.pressure_in} <span>in</span></span>
             </li>
         `;
     }
