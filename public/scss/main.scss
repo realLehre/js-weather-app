@@ -38,6 +38,11 @@ body {
     background: m.$bright-blue;
     padding: 10px 20px;
     border-radius: 5px;
+    color: white;
+
+    &::selection {
+      color: white;
+    }
 
     &::placeholder {
       @include m.secFont;
