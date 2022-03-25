@@ -16,6 +16,7 @@ body {
   width: 100%;
   height: 100%;
   @include m.flex(center, center, column);
+  background: rgba(m.$bright-blue, 0.4);
 }
 
 #app-name {
