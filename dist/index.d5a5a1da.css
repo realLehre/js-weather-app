@@ -43,7 +43,7 @@ body {
 }
 
 .input-container {
-  width: 70%;
+  width: 90%;
   height: 40%;
   background: #fff;
   border-radius: 10px;
@@ -54,8 +54,16 @@ body {
   display: flex;
 }
 
+.input-container form {
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 .input-container input {
-  width: 90%;
+  width: 100%;
   color: #fff;
   background: #3c78b0;
   border: none;

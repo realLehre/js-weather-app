@@ -24,15 +24,20 @@ body {
 }
 
 .input-container {
-  width: 70%;
+  width: 90%;
   height: 40%;
   @include m.flex(center, center, column);
   background: white;
   padding: 20px 10px;
   border-radius: 10px;
 
+  & form {
+    width: 70%;
+    @include m.flex(center, center, column);
+  }
+
   & input {
-    width: 90%;
+    width: 100%;
     outline: none;
     border: none;
     background: m.$bright-blue;
