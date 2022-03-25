@@ -4,6 +4,24 @@ const ui = new UI();
 
 window.addEventListener('DOMContentLoaded', showWeather);
 
+const modal = document.getElementById('location-input');
+const locationBtn = document.querySelector('.change-location');
+
+locationBtn.addEventListener('click', () => {
+    modal.classList.add('open');
+})
+
+document.getElementById('city-form').addEventListener('submit', (e) => {
+    const value = e.target.value;
+
+    console.log(value);
+})
+
+
+document.querySelector('.close-btn').addEventListener('click', () => {
+    modal.classList.remove('open');
+})
+
 function showWeather() {
     weather.getWeather()
         .then(data => {
@@ -17,15 +35,5 @@ document.getElementById('ad-info-text').addEventListener('click', () => {
     document.querySelector('.fa-angle-up').classList.toggle('show');
 })
 
-const modal = document.getElementById('location-input');
-const locationBtn = document.querySelector('.change-location');
 
-locationBtn.addEventListener('click', () => {
-    modal.classList.add('open');
-})
-
-
-document.querySelector('.close-btn').addEventListener('click', () => {
-    modal.classList.remove('open');
-})
 
