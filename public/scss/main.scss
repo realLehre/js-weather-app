@@ -24,9 +24,23 @@ body {
 }
 
 .input-container {
+  width: 70%;
+  height: 40%;
   @include m.flex(center, center, column);
   background: white;
   padding: 20px 10px;
+  border-radius: 10px;
+
+  & input {
+    outline: none;
+    border: none;
+    background: m.$bright-blue;
+    padding: 10px;
+
+    &::placeholder {
+      color: white;
+    }
+  }
 }
 
 #app-name {

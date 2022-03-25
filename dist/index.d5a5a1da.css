@@ -43,12 +43,26 @@ body {
 }
 
 .input-container {
+  width: 70%;
+  height: 40%;
   background: #fff;
+  border-radius: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px 10px;
   display: flex;
+}
+
+.input-container input {
+  background: #3c78b0;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+.input-container input::placeholder {
+  color: #fff;
 }
 
 #app-name {
