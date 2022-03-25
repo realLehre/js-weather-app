@@ -55,14 +55,17 @@ body {
 }
 
 .input-container input {
+  width: 90%;
   background: #3c78b0;
   border: none;
+  border-radius: 5px;
   outline: none;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 .input-container input::placeholder {
   color: #fff;
+  font-family: Merriweather, serif;
 }
 
 #app-name {
