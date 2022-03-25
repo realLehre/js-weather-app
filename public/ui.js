@@ -46,6 +46,16 @@ class UI{
 
         let output = '';
         forecast.forEach((hour, index) => {
+            const time = new Date(hour.time).getHours();
+            // console.log(time);
+
+            let realTime = `0${time}:00`;
+            if(time >= 10){
+                realTime = `${time}:00` 
+            }
+            console.log(realTime)
+
+
             output += `
                 <span class="weather">
                 <p class="time">${index}am</p>

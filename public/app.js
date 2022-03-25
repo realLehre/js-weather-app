@@ -7,7 +7,6 @@ window.addEventListener('DOMContentLoaded', showWeather);
 function showWeather() {
     weather.getWeather()
         .then(data => {
-            console.log(data);
             ui.display(data)
         })
 }
