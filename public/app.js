@@ -14,7 +14,9 @@ locationBtn.addEventListener('click', () => {
 document.getElementById('city-form').addEventListener('submit', (e) => {
     const input = document.getElementById('city-form-input');
 
-    console.log(input.value);
+    weather.changeCity(input.value);
+
+    showWeather();
 
     input.value = '';
 
