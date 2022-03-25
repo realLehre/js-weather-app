@@ -11,6 +11,9 @@ body {
   background: linear-gradient(to right, m.$left-grad, m.$right-grad);
 }
 
+#location-input {
+}
+
 #app-name {
   font-size: map-get(m.$font-sizes, page-name);
   text-align: center;
