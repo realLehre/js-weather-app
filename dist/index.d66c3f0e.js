@@ -1,8 +1,9 @@
-const weather = new Weather('Lagos');
+const weather = new Weather('Ife');
 const ui = new UI();
 window.addEventListener('DOMContentLoaded', showWeather);
 function showWeather() {
     weather.getWeather().then((data)=>{
+        console.log(data);
         ui.display(data);
     });
 }
