@@ -66,6 +66,7 @@ body {
 .input-container .close-btn .dash {
   width: 30px;
   height: 3px;
+  cursor: pointer;
   background: red;
   position: absolute;
 }

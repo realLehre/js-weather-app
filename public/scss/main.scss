@@ -45,6 +45,7 @@ body {
       width: 30px;
       height: 3px;
       background: red;
+      cursor: pointer;
 
       &.dash-1 {
         transform: rotate(45deg);
