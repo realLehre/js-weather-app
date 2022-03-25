@@ -77,6 +77,15 @@ body {
   font-family: Merriweather, serif;
 }
 
+.input-container button {
+  width: 100%;
+  background: #eeb436;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
 #app-name {
   text-align: center;
   font-size: 2.5rem;

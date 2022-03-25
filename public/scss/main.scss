@@ -51,6 +51,15 @@ body {
       color: white;
     }
   }
+
+  & button {
+    width: 100%;
+    border: none;
+    background: m.$bright-orange;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
 }
 
 #app-name {
