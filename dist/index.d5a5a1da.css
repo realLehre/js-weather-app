@@ -55,17 +55,18 @@ body {
   position: relative;
 }
 
-.input-container.close-btn {
+.input-container .close-btn {
   width: 50px;
   height: 50px;
+  z-index: 10;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
 }
 
-.input-container.close-btn .dash {
-  width: 10px;
-  height: 5px;
+.input-container .close-btn .dash {
+  width: 30px;
+  height: 2px;
   background: red;
 }
 
