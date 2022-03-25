@@ -79,11 +79,13 @@ body {
 
 .input-container button {
   width: 100%;
+  color: #fff;
   background: #eeb436;
   border: none;
   border-radius: 5px;
   margin-top: 20px;
   padding: 10px;
+  font-family: Merriweather, serif;
 }
 
 #app-name {
