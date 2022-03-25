@@ -28,12 +28,14 @@ body {
 #location-input {
   width: 100%;
   height: 100%;
-  background: #3c78b066;
+  background: #3c78b0cc;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
   position: fixed;
+  top: 0;
+  left: 0;
 }
 
 #app-name {
