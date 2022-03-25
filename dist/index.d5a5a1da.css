@@ -81,6 +81,7 @@ body {
 .input-container button {
   width: 100%;
   color: #fff;
+  cursor: pointer;
   background: #eeb436;
   border: none;
   border-radius: 5px;
