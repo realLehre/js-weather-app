@@ -33,6 +33,23 @@ class UI {
                 Pressure <span id="pressure-num">${current.pressure_in} <span>in</span></span>
             </li>
         `;
+        const forecast = data.forecast.forecastday[1].hour;
+        console.log(forecast);
+        let output = '';
+        forecast.forEach((hour, index)=>{
+            output += `
+                <span class="weather">
+                <p class="time">${index}am</p>
+                <div class="weather-img">
+                    <img src=${hour.condition.icon} alt="" />
+                </div>
+                <div class="temp">
+                    ${hour.temp_c} <span>o <span>C</span></span>
+                </div>
+                </span>
+            `;
+        });
+        this.morrowWeather.innerHTML = output;
     }
 }
 
