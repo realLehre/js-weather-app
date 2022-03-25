@@ -14,8 +14,8 @@ const locationBtn = document.querySelector('.change-location');
 locationBtn.addEventListener('click', ()=>{
     modal.classList.add('open');
 });
-document.querySelectorAll('.dash').forEach((dash)=>{
-    dash.addEventListener('click', ()=>{});
+document.querySelector('.close-btn').addEventListener('click', ()=>{
+    modal.classList.remove('open');
 });
 
 //# sourceMappingURL=index.d66c3f0e.js.map

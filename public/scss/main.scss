@@ -45,21 +45,22 @@ body {
     width: 50px;
     height: 50px;
     z-index: 10;
+    cursor: pointer;
 
     & .dash {
-      position: absolute;
       width: 30px;
       height: 3px;
       background: red;
       cursor: pointer;
+      transform-origin: center;
 
       &.dash-1 {
+        position: absolute;
+        top: -0px;
         transform: rotate(45deg);
-        top: -1px;
       }
 
       &.dash-2 {
-        left: -1.5px;
         transform: rotate(-45deg);
       }
     }

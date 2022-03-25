@@ -22,8 +22,7 @@ locationBtn.addEventListener('click', () => {
 })
 
 
-document.querySelectorAll('.dash').forEach(dash => {
-    dash.addEventListener('click', () => {
-
-    })
+document.querySelector('.close-btn').addEventListener('click', () => {
+    modal.classList.remove('open');
 })
+
