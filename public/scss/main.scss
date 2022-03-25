@@ -39,10 +39,7 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     color: white;
-
-    &::selection {
-      color: white;
-    }
+    @include m.secFont;
 
     &::placeholder {
       @include m.secFont;

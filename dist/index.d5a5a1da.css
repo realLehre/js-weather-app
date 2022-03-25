@@ -62,10 +62,7 @@ body {
   border-radius: 5px;
   outline: none;
   padding: 10px 20px;
-}
-
-.input-container input::selection {
-  color: #fff;
+  font-family: Merriweather, serif;
 }
 
 .input-container input::placeholder {
