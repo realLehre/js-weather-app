@@ -44,6 +44,10 @@ body {
 
 .input-container {
   background: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 #app-name {

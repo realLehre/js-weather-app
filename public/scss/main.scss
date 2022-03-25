@@ -24,6 +24,7 @@ body {
 }
 
 .input-container {
+  @include m.flex(center, center, column);
   background: white;
 }
 
