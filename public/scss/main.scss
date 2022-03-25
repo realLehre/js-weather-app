@@ -118,6 +118,11 @@ body {
     margin-top: 20px;
     border-radius: 8px;
     cursor: pointer;
+    @include m.transition;
+
+    &:hover {
+      background: m.$bright-orange;
+    }
 
     & a {
       @include m.secFont;

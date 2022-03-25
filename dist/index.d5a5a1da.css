@@ -155,6 +155,11 @@ body {
   border-radius: 8px;
   margin: 20px auto 0;
   padding: 8px 5px;
+  transition: all .5s ease-in-out;
+}
+
+#main-container .change-location:hover {
+  background: #eeb436;
 }
 
 #main-container .change-location a {
