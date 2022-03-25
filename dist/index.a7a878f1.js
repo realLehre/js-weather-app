@@ -19,7 +19,7 @@ class UI {
         this.additionInfo.innerHTML = `
             <li class="info cloud">Cloud <span id="cloud-num">${current.cloud}</span></li>
             <li class="info uv">UV <span id="uv-num">${current.uv}</span></li>
-            <li class="info humdity">51 <span id="humidity-num">51</span></li>
+            <li class="info humdity">Humidity <span id="humidity-num">${current.humidity}</span></li>
             <li class="info wind-degree">
                 Wind Degree <span id="wind-degree-num">206</span>
             </li>
