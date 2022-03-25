@@ -23,7 +23,7 @@ class UI{
             <li class="info uv">UV <span id="uv-num">${current.uv}</span></li>
             <li class="info humdity">Humidity <span id="humidity-num">${current.humidity}</span></li>
             <li class="info wind-degree">
-                Wind Degree <span id="wind-degree-num">206</span>
+                Wind Degree <span id="wind-degree-num">${current.wind_degree}</span>
             </li>
             <li class="info wind-speed">
                 Wind Speed <span id="wind-speed-num">5.8<span>km/h</span></span>
