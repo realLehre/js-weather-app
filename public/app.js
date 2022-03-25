@@ -15,6 +15,11 @@ document.getElementById('ad-info-text').addEventListener('click', () => {
 })
 
 const modal = document.getElementById('location-input');
+const locationBtn = document.querySelector('.change-location');
+
+locationBtn.addEventListener('click', () => {
+    modal.classList.add('open');
+})
 
 
 document.querySelectorAll('.dash').forEach(dash => {
