@@ -1,11 +1,11 @@
 class Storage {
-    constructor(city){
-        this.city = city;
+    constructor(){
+        this.city;
         this.default = 'Abuja';
     }
     getLocalstorage() {
         if (localStorage.getItem('city') == null) this.city = this.default;
-        else localStorage.getItem('city');
+        else this.city = localStorage.getItem('city');
         return {
             city: this.city
         };

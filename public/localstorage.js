@@ -1,6 +1,6 @@
 class Storage{
-    constructor(city){
-        this.city = city;
+    constructor(){
+        this.city;
         this.default = 'Abuja';
     }
 
@@ -8,7 +8,7 @@ class Storage{
         if(localStorage.getItem('city') == null){
             this.city = this.default;
         } else {
-            localStorage.getItem('city');
+            this.city = localStorage.getItem('city');
         }
 
         return {
