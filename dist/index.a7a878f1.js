@@ -38,7 +38,7 @@ class UI {
         ];
         const todayMonth = new Date().getMonth();
         const monthName = months[todayMonth];
-        this.dateToday.innerHTML = `<p id="date-today">${dayName}, 3 Aug</p>`;
+        this.dateToday.innerHTML = `<p id="date-today">${dayName}, ${todayDate} ${monthName}</p>`;
         const current = data.current;
         const location = data.location;
         this.conditionText.textContent = data.current.condition.text;
