@@ -34,6 +34,7 @@ body {
 .input-container {
   position: relative;
   width: 90%;
+  max-width: 500px;
   height: 40%;
   @include m.flex(center, center, column);
   background: linear-gradient(to right, m.$left-grad, m.$right-grad);

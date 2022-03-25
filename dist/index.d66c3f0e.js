@@ -23,7 +23,8 @@ document.querySelector('.close-btn').addEventListener('click', ()=>{
 function showWeather() {
     weather.getWeather().then((data)=>{
         ui.display(data);
-    });
+    }).catch((err)=>console.log(err)
+    );
 }
 document.getElementById('ad-info-text').addEventListener('click', ()=>{
     document.querySelector('.infos').classList.toggle('show');

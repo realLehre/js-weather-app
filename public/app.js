@@ -40,6 +40,7 @@ function showWeather() {
         .then(data => {
             ui.display(data)
         })
+        .catch(err => console.log(err))
 }
 
 
