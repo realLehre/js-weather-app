@@ -28,7 +28,9 @@ body {
 #location-input {
   width: 100%;
   height: 100%;
-  filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
   background: #3c78b0cc;
   flex-direction: column;
   justify-content: center;
