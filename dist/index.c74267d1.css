@@ -51,6 +51,21 @@ body {
   align-items: center;
   padding: 20px 10px;
   display: flex;
+  position: relative;
+}
+
+.input-container.close-btn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.input-container.close-btn .dash {
+  width: 10px;
+  height: 5px;
+  background: red;
 }
 
 .input-container form {
