@@ -385,7 +385,7 @@ body {
   border-radius: 10px;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 10px 20px;
   display: flex;
   box-shadow: 0 0 10px #000;
@@ -401,8 +401,8 @@ body {
 }
 
 .weather .weather-img {
-  width: 50px;
-  margin: 5px 0;
+  width: 70px;
+  margin: 0;
 }
 
 .weather .weather-img img {
