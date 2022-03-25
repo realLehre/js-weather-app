@@ -1,3 +1,15 @@
+const weather = new Weather('Lagos');
+
+const ui = new UI();
+
+window.addEventListener('DOMContentLoaded', showWeather);
+
+function showWeather() {
+    weather.getWeather()
+        .then(data => {
+            ui.display(data)
+        })
+}
 
 
 document.getElementById('ad-info-text').addEventListener('click', () => {

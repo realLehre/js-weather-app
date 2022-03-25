@@ -1,3 +1,11 @@
+const weather = new Weather('Lagos');
+const ui = new UI();
+window.addEventListener('DOMContentLoaded', showWeather);
+function showWeather() {
+    weather.getWeather().then((data)=>{
+        ui.display(data);
+    });
+}
 document.getElementById('ad-info-text').addEventListener('click', ()=>{
     document.querySelector('.infos').classList.toggle('show');
     document.querySelector('.fa-angle-up').classList.toggle('show');

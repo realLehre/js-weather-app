@@ -1,0 +1,9 @@
+class UI{
+    constructor(){
+
+    }
+
+    display() {
+        
+    }
+}
