@@ -26,6 +26,7 @@ body {
 .input-container {
   @include m.flex(center, center, column);
   background: white;
+  padding: 20px 10px;
 }
 
 #app-name {
