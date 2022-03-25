@@ -30,7 +30,8 @@ body {
   height: 100%;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  z-index: 10;
+  visibility: hidden;
+  z-index: -10;
   background: #3c78b080;
   flex-direction: column;
   justify-content: center;
@@ -39,6 +40,11 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+#location-input.open {
+  visibility: visible;
+  z-index: 10;
 }
 
 .input-container {

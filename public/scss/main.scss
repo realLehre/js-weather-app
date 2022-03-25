@@ -20,7 +20,13 @@ body {
   @include m.flex(center, center, column);
   backdrop-filter: blur(5px);
   background: rgba(m.$bright-blue, 0.5);
-  z-index: 10;
+  visibility: hidden;
+  z-index: -10;
+
+  &.open {
+    visibility: visible;
+    z-index: 10;
+  }
 }
 
 .input-container {

@@ -9,6 +9,7 @@ document.getElementById('ad-info-text').addEventListener('click', ()=>{
     document.querySelector('.infos').classList.toggle('show');
     document.querySelector('.fa-angle-up').classList.toggle('show');
 });
+const modal = document.getElementById('location-input');
 document.querySelectorAll('.dash').forEach((dash)=>{
     dash.addEventListener('click', ()=>{});
 });
