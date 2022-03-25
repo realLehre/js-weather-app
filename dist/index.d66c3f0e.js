@@ -1,4 +1,4 @@
-const weather = new Weather('Ife');
+const weather = new Weather('Bayern Munich');
 const ui = new UI();
 window.addEventListener('DOMContentLoaded', showWeather);
 function showWeather() {

@@ -24,7 +24,7 @@ class UI {
                 Wind Degree <span id="wind-degree-num">${current.wind_degree}</span>
             </li>
             <li class="info wind-speed">
-                Wind Speed <span id="wind-speed-num">${current.wind_kph}<span>km/h</span></span>
+                Wind Speed <span id="wind-speed-num">${current.wind_kph} <span>km/h</span></span>
             </li>
             <li class="info wind-dir">
                 Wind Direction <span id="wind-dir-num">${current.wind_dir}</span>
