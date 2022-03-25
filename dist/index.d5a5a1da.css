@@ -25,6 +25,10 @@ body {
   font-size: 10px;
 }
 
+#location-input {
+  position: fixed;
+}
+
 #app-name {
   text-align: center;
   font-size: 2.5rem;
