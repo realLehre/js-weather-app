@@ -185,7 +185,7 @@ body {
 
   //   main temperature area: temperature plus icon
   & #temp-main {
-    margin: 10px 0;
+    margin: 30px 0;
     width: 100%;
     @include m.flex(space-between, center, row);
 
@@ -474,23 +474,27 @@ footer {
   }
   #main-container {
     & #temp-main {
+      margin: 15px 0;
       & .temp {
-        font-size: 4rem;
-        font-weight: 900;
+        & .temp-unit {
+          font-size: 4rem;
 
-        & span {
-          font-size: 1rem;
-          transform: translateY(15px);
+          & .unit {
+            font-size: 1rem;
 
-          & span {
-            font-size: 1.8rem;
-            transform: translateY(0px);
+            & span {
+              font-size: 1.8rem;
+            }
           }
         }
       }
 
       & .temp-icon {
-        width: 90px;
+        width: 100px;
+
+        & img {
+          width: 100%;
+        }
       }
     }
   }

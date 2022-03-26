@@ -217,7 +217,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
+  margin: 30px 0;
   display: flex;
 }
 
@@ -525,23 +525,28 @@ footer a {
     font-size: 2rem;
   }
 
-  #main-container #temp-main .temp {
+  #main-container #temp-main {
+    margin: 15px 0;
+  }
+
+  #main-container #temp-main .temp .temp-unit {
     font-size: 4rem;
-    font-weight: 900;
   }
 
-  #main-container #temp-main .temp span {
+  #main-container #temp-main .temp .temp-unit .unit {
     font-size: 1rem;
-    transform: translateY(15px);
   }
 
-  #main-container #temp-main .temp span span {
+  #main-container #temp-main .temp .temp-unit .unit span {
     font-size: 1.8rem;
-    transform: translateY(0);
   }
 
   #main-container #temp-main .temp-icon {
-    width: 90px;
+    width: 100px;
+  }
+
+  #main-container #temp-main .temp-icon img {
+    width: 100%;
   }
 
   .info-container p {

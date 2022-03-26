@@ -81,8 +81,35 @@ class UI{
                 </div>
                 </span>
             `
+            
         })
 
+        const units = document.querySelectorAll('.temp-unit');
+        // add unit change to local storage
+        let savedUnit = localStorage.getItem('tempUnit'); 
+
+        if(savedUnit === 'switch'){
+            units.forEach(unit => {
+                unit.classList.add('switch');
+            })
+        }
+
+        // get btn for switching temperature unit
+        document.querySelector('.switch-btn').addEventListener('click', () => {
+            console.log(1)
+            savedUnit = localStorage.getItem('tempUnit');
+                
+            units.forEach(unit => {        
+                if(!unit.classList.contains('switch')){
+                    unit.classList.add('switch');
+                    savedUnit = localStorage.setItem('tempUnit', 'switch')
+                } else {
+                    unit.classList.remove('switch');
+                    savedUnit = localStorage.setItem('tempUnit', null)
+                }
+            })
+        });
+        
         this.morrowWeather.innerHTML = output;
     }
 }

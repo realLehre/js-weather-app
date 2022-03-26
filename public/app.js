@@ -58,32 +58,32 @@ document.getElementById('ad-info-text').addEventListener('click', () => {
 })
 
 
-// add unit change to local storage
-let unit = localStorage.getItem('tempUnit'); 
+// // add unit change to local storage
+// let savedUnit = localStorage.getItem('tempUnit'); 
 
-const units = document.querySelectorAll('.temp-unit');
+// if(savedUnit === 'switch'){
+//     units.forEach(unit => {
+//         unit.classList.add('switch');
+//     })
+// }
 
-if(unit === 'switch'){
-    units.forEach(unit => {
-        unit.classList.add('switch');
-    })
-}
-
-const switchBtn = document.querySelector('.switch-btn');
-
-// get btn for switching temperature unit
-switchBtn.addEventListener('click', () => {
-    unit = localStorage.getItem('tempUnit');
+// // get btn for switching temperature unit
+// document.querySelector('.switch-btn').addEventListener('click', () => {
+//     console.log(1)
+//     savedUnit = localStorage.getItem('tempUnit');
         
-    units.forEach(unit => {        
-        if(!unit.classList.contains('switch')){
-            unit.classList.add('switch');
-            unit = localStorage.setItem('tempUnit', 'switch')
-        } else {
-            unit.classList.remove('switch');
-            unit = localStorage.setItem('tempUnit', null)
-        }
-    })
-})
+//     units.forEach(unit => {        
+//         if(!unit.classList.contains('switch')){
+//             unit.classList.add('switch');
+//             savedUnit = localStorage.setItem('tempUnit', 'switch')
+//         } else {
+//             unit.classList.remove('switch');
+//             savedUnit = localStorage.setItem('tempUnit', null)
+//         }
+//     })
+// });
+
+
+
 
 
