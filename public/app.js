@@ -52,6 +52,10 @@ document.getElementById('ad-info-text').addEventListener('click', () => {
 const switchBtn = document.querySelector('.switch-btn');
 
 switchBtn.addEventListener('click', () => {
-   
+   const units = document.querySelectorAll('.temp-unit');
+
+   units.forEach(unit => {
+       unit.classList.toggle('switch')
+   })
 })
 

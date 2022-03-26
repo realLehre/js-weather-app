@@ -254,11 +254,14 @@ body {
 
 #main-container #temp-main .temp .fahrenheit {
   transition: all .5s ease-in-out;
-  transform: scale(0);
+  display: none;
 }
 
 #main-container #temp-main .temp .fahrenheit.switch {
-  transform: scale(1);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
 }
 
 #main-container #temp-main .temp-icon {

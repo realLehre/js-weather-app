@@ -218,11 +218,11 @@ body {
       }
 
       & .fahrenheit {
-        transform: scale(0);
+        display: none;
         @include m.transition;
 
         &.switch {
-          transform: scale(1);
+          @include m.flex(space-between, flex-start, row);
         }
       }
     }
