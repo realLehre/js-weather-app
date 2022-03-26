@@ -286,6 +286,7 @@ body {
   }
 }
 
+// additional weather information
 #ad-info {
   @include m.flex(flex-start, flex-start, row);
   max-width: 500px;
@@ -321,6 +322,7 @@ body {
   }
 }
 
+// more weather informations
 .infos {
   width: 100%;
   margin: 0 auto;
@@ -361,6 +363,7 @@ body {
   }
 }
 
+// tomorrow's weather
 #morrow {
   max-width: 600px;
   margin: 0 auto;
@@ -464,6 +467,7 @@ footer {
   }
 }
 
+// media query for small screens
 @media screen and (max-width: 450px) {
   #app-name {
     font-size: 2rem;
