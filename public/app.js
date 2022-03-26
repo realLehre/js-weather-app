@@ -1,13 +1,18 @@
+// instantiate new storage
 const storage = new Storage();
-
+// get city name from Storage class
 const cityName = storage.getLocalstorage().city;
 
+// instantiate new weather
 const weather = new Weather(cityName);
 
+// instantiate new ui
 const ui = new UI();
 
+// display previous weather on page reload
 window.addEventListener('DOMContentLoaded', showWeather);
 
+// get change location input field
 const modal = document.getElementById('location-input');
 const locationBtn = document.querySelector('.change-location');
 
