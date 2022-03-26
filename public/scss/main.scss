@@ -218,6 +218,10 @@ body {
     margin-top: 15px;
     @include m.secFont;
     font-size: map-get(m.$font-sizes, ad-weather-info);
+
+    & #local-time-time {
+      color: m.$bright-orange;
+    }
   }
 
   & .change-location {
