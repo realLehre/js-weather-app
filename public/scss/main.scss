@@ -142,8 +142,8 @@ body {
   //   change temperature unit
   & .switch-btn {
     position: absolute;
-    top: 25px;
-    left: 20px;
+    top: 70px;
+    left: 10px;
     cursor: pointer;
 
     &:hover + .switch-text {
@@ -158,8 +158,8 @@ body {
 
   & .switch-text {
     position: absolute;
-    top: 25px;
-    left: 42px;
+    top: 70px;
+    left: 35px;
     font-size: 0.8rem;
     background: m.$bright-blue;
     padding: 2px 3px;
@@ -169,9 +169,10 @@ body {
 
   //   weather condition text
   & #condition {
+    margin: 0 auto;
     margin-bottom: 0;
     @include m.flex(center, center, row);
-    font-size: map-get(m.$font-sizes, weather-info);
+    font-size: map-get(m.$font-sizes, info);
     @include m.secFont;
     & i {
       color: m.$bright-orange;
@@ -180,6 +181,7 @@ body {
 
     & .condition-text {
       font-weight: 300;
+      display: inline-block;
     }
   }
 

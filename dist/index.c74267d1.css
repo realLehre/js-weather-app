@@ -169,8 +169,8 @@ body {
 #main-container .switch-btn {
   cursor: pointer;
   position: absolute;
-  top: 25px;
-  left: 20px;
+  top: 70px;
+  left: 10px;
 }
 
 #main-container .switch-btn:hover + .switch-text {
@@ -189,17 +189,17 @@ body {
   font-size: .8rem;
   display: none;
   position: absolute;
-  top: 25px;
-  left: 42px;
+  top: 70px;
+  left: 35px;
 }
 
 #main-container #condition {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0;
+  margin: 0 auto;
   font-family: Merriweather, serif;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   display: flex;
 }
 
@@ -210,6 +210,7 @@ body {
 
 #main-container #condition .condition-text {
   font-weight: 300;
+  display: inline-block;
 }
 
 #main-container #temp-main {
