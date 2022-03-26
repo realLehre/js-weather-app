@@ -71,6 +71,7 @@ if(unit === 'switch'){
 
 const switchBtn = document.querySelector('.switch-btn');
 
+// get btn for switching temperature unit
 switchBtn.addEventListener('click', () => {
     unit = localStorage.getItem('tempUnit');
         
