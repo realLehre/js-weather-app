@@ -69,25 +69,20 @@ if(unit === 'switch'){
     })
 }
 
-function switchTemp() {
-    const switchBtn = document.querySelector('.switch-btn');
+const switchBtn = document.querySelector('.switch-btn');
 
-    switchBtn.addEventListener('click', () => {
-        unit = localStorage.getItem('tempUnit');
-         
-              
-        units.forEach(unit => {        
-            if(!unit.classList.contains('switch')){
-                unit.classList.add('switch');
-                unit = localStorage.setItem('tempUnit', 'switch')
-            } else {
-                unit.classList.remove('switch');
-                unit = localStorage.setItem('tempUnit', null)
-            }
-        })
+switchBtn.addEventListener('click', () => {
+    unit = localStorage.getItem('tempUnit');
+        
+    units.forEach(unit => {        
+        if(!unit.classList.contains('switch')){
+            unit.classList.add('switch');
+            unit = localStorage.setItem('tempUnit', 'switch')
+        } else {
+            unit.classList.remove('switch');
+            unit = localStorage.setItem('tempUnit', null)
+        }
     })
-}
-
-switchTemp();
+})
 
 
