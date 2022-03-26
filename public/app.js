@@ -37,11 +37,12 @@ document.getElementById('city-form').addEventListener('submit', (e) => {
     e.preventDefault()  
 })
 
-
+// get btn to close location modal 
 document.querySelector('.close-btn').addEventListener('click', () => {
     modal.classList.remove('open');
 })
 
+// show weather info in the web UI
 function showWeather() {
     weather.getWeather()
         .then(data => {
@@ -50,12 +51,14 @@ function showWeather() {
         .catch(err => console.log(err))
 }
 
-
+// show additional weather information
 document.getElementById('ad-info-text').addEventListener('click', () => {
     document.querySelector('.infos').classList.toggle('show');
     document.querySelector('.fa-angle-up').classList.toggle('show');
 })
 
+
+// add unit change to local storage
 let unit = localStorage.getItem('tempUnit'); 
 
 const units = document.querySelectorAll('.temp-unit');
