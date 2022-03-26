@@ -84,6 +84,10 @@ class UI{
             
         })
 
+        // append tomorrow's weather
+        this.morrowWeather.innerHTML = output;
+
+        // declare all units
         const units = document.querySelectorAll('.temp-unit');
         // add unit change to local storage
         let savedUnit = localStorage.getItem('tempUnit'); 
@@ -108,8 +112,6 @@ class UI{
                     savedUnit = localStorage.setItem('tempUnit', null)
                 }
             })
-        });
-        
-        this.morrowWeather.innerHTML = output;
+        });  
     }
 }

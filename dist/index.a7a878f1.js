@@ -69,6 +69,9 @@ class UI {
                 </span>
             `;
         });
+        // append tomorrow's weather
+        this.morrowWeather.innerHTML = output;
+        // declare all units
         const units = document.querySelectorAll('.temp-unit');
         // add unit change to local storage
         let savedUnit = localStorage.getItem('tempUnit');
@@ -89,7 +92,6 @@ class UI {
                 }
             });
         });
-        this.morrowWeather.innerHTML = output;
     }
 }
 
