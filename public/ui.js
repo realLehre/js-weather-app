@@ -16,7 +16,13 @@ class UI{
 
         this.conditionText.textContent = data.current.condition.text;
 
-        this.temperature.innerHTML = `${current.temp_c} <span>o <span>C</span></span>`;
+        this.temperature.innerHTML = `<span class="temp-unit celcius"
+                >${current.temp_c} <span class="unit">o <span class="sym">C</span></span>
+                </span>
+                <span class="temp-unit fahrenheit"
+                >${current.temp_f} <span class="unit">o <span class="sym">F</span></span>
+                </span>
+            `;
 
         this.icon.setAttribute('src', data.current.condition.icon);
 
@@ -61,12 +67,17 @@ class UI{
                     <img src=${hour.condition.icon} alt="" />
                 </div>
                 <div class="temp">
-                    ${hour.temp_c} <span>o <span>C</span></span>
+                    <span class="temp-unit celcius"
+                    >${hour.temp_c} <span class="unit">o <span class="sym">C</span></span>
+                    </span>
+                    <span class="temp-unit fahrenheit"
+                    >${hour.temp_f} <span class="unit">o <span class="sym">F</span></span>
+                    </span>
                 </div>
                 </span>
             `
         })
 
-        // this.morrowWeather.innerHTML = output;
+        this.morrowWeather.innerHTML = output;
     }
 }

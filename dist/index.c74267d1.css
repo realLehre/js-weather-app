@@ -468,23 +468,46 @@ body {
   display: flex;
 }
 
-.weather .temp span {
+.weather .temp .temp-unit {
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: Merriweather, serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  display: flex;
+}
+
+.weather .temp .temp-unit .unit {
   color: #eeb436;
+  z-index: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: Roboto, sans-serif;
+  font-size: .6rem;
+  display: flex;
+  transform: translateY(2px);
+}
+
+.weather .temp .temp-unit .unit span {
+  font-size: .9rem;
+}
+
+.weather .temp .celcius.switch {
+  display: none;
+}
+
+.weather .temp .fahrenheit {
+  transition: all .5s ease-in-out;
+  display: none;
+}
+
+.weather .temp .fahrenheit.switch {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  margin-left: 3px;
-  font-family: Roboto, sans-serif;
-  font-size: .6rem;
-  font-weight: 600;
   display: flex;
-  transform: translateY(3px);
-}
-
-.weather .temp span span {
-  margin-left: 1px;
-  font-size: .9rem;
-  transform: translateY(2px);
 }
 
 footer {

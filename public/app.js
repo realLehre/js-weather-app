@@ -49,13 +49,18 @@ document.getElementById('ad-info-text').addEventListener('click', () => {
     document.querySelector('.fa-angle-up').classList.toggle('show');
 })
 
-const switchBtn = document.querySelector('.switch-btn');
+function switchTemp() {
+    const switchBtn = document.querySelector('.switch-btn');
 
-switchBtn.addEventListener('click', () => {
-   const units = document.querySelectorAll('.temp-unit');
+    switchBtn.addEventListener('click', () => {
+        const units = document.querySelectorAll('.temp-unit');
 
-   units.forEach(unit => {
-       unit.classList.toggle('switch')
-   })
-})
+        units.forEach(unit => {
+            unit.classList.toggle('switch')
+        })
+    })
+}
+
+switchTemp();
+
 

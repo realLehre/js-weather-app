@@ -36,24 +36,26 @@ class UI {
             </li>
         `;
         const forecast = data.forecast.forecastday[1].hour;
-        let output = '';
-        forecast.forEach((hour, index)=>{
-            const time = new Date(hour.time).getHours();
-            let realTime = `0${time}:00`;
-            if (time >= 10) realTime = `${time}:00`;
-            output += `
-                <span class="weather">
-                <p class="time">${realTime}</p>
-                <div class="weather-img">
-                    <img src=${hour.condition.icon} alt="" />
-                </div>
-                <div class="temp">
-                    ${hour.temp_c} <span>o <span>C</span></span>
-                </div>
-                </span>
-            `;
-        });
-        this.morrowWeather.innerHTML = output;
+    // let output = '';
+    // forecast.forEach((hour, index) => {
+    //     const time = new Date(hour.time).getHours();
+    //     let realTime = `0${time}:00`;
+    //     if(time >= 10){
+    //         realTime = `${time}:00` 
+    //     }
+    //     output += `
+    //         <span class="weather">
+    //         <p class="time">${realTime}</p>
+    //         <div class="weather-img">
+    //             <img src=${hour.condition.icon} alt="" />
+    //         </div>
+    //         <div class="temp">
+    //             ${hour.temp_c} <span>o <span>C</span></span>
+    //         </div>
+    //         </span>
+    //     `
+    // })
+    // this.morrowWeather.innerHTML = output;
     }
 }
 

@@ -2,6 +2,7 @@ class Storage{
     constructor(){
         this.city;
         this.default = 'Abuja';
+        this.className = 'switch'
     }
 
     getLocalstorage(){
@@ -16,7 +17,7 @@ class Storage{
         }
     }
 
-    saveToLocalstorage(city){
-        localStorage.setItem('city', city)
+    saveToLocalstorage(city, className){
+        localStorage.setItem('city', city);
     }
 }

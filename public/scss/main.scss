@@ -410,22 +410,22 @@ body {
     font-weight: 900;
 
     & .temp-unit {
-      @include m.flex(space-between, flex-start, row);
+      @include m.flex(center, flex-start, row);
       @include m.secFont;
       font-size: map-get(m.$font-sizes, page-name);
-      font-size: 5rem;
+      font-size: 1.3rem;
       font-weight: 900;
 
       & .unit {
         @include m.mainFont;
         color: m.$bright-orange;
         z-index: 1;
-        font-size: 1.5rem;
-        transform: translateY(12px);
+        font-size: 0.6rem;
+        transform: translateY(2px);
         @include m.flex(center, flex-start, row);
 
         & span {
-          font-size: 2.5rem;
+          font-size: 0.9rem;
         }
       }
     }
