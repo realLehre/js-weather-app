@@ -3,6 +3,7 @@ class UI {
         this.conditionText = document.querySelector('.condition-text');
         this.temperature = document.querySelector('.temp');
         this.icon = document.getElementById('temp-icon');
+        this.localTime = document.getElementById('local-time-time');
         this.latitude = document.getElementById('lat');
         this.location = document.querySelector('.location-name');
         this.additionInfo = document.querySelector('.infos');
@@ -11,9 +12,13 @@ class UI {
     display(data) {
         const current = data.current;
         const location = data.location;
+        const time1 = location.localtime;
+        const timeNum = new Date(time1).toLocaleTimeString();
+        console.log(timeNum);
         this.conditionText.textContent = data.current.condition.text;
         this.temperature.innerHTML = `${current.temp_c} <span>o <span>C</span></span>`;
         this.icon.setAttribute('src', data.current.condition.icon);
+        this.localTime.textContent = location.localTime;
         this.latitude.innerHTML = `Lat: ${location.lat}`;
         this.location.innerHTML = `${location.name}, ${location.country}. <span id="lat">${this.latitude.innerHTML}</span>`;
         this.additionInfo.innerHTML = `
