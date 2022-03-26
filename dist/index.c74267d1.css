@@ -265,11 +265,12 @@ body {
 #main-container .local-time {
   margin-top: 15px;
   font-family: Merriweather, serif;
-  font-size: .9rem;
+  font-size: .7rem;
 }
 
 #main-container .local-time #local-time-time {
   color: #eeb436;
+  font-size: 1rem;
 }
 
 #main-container .change-location {

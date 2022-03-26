@@ -217,9 +217,10 @@ body {
   & .local-time {
     margin-top: 15px;
     @include m.secFont;
-    font-size: map-get(m.$font-sizes, ad-weather-info);
+    font-size: 0.7rem;
 
     & #local-time-time {
+      font-size: 1rem;
       color: m.$bright-orange;
     }
   }
