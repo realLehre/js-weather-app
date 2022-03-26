@@ -142,6 +142,10 @@ body {
     left: 20px;
     cursor: pointer;
 
+    &:hover + .switch-text {
+      display: block;
+    }
+
     & i {
       color: m.$bright-orange;
       font-size: 1.2rem;

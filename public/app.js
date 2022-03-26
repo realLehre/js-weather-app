@@ -49,9 +49,9 @@ document.getElementById('ad-info-text').addEventListener('click', () => {
     document.querySelector('.fa-angle-up').classList.toggle('show');
 })
 
-const switchBtn = document.querySelector('.switch');
+const switchBtn = document.querySelector('.switch-btn');
 
-switchBtn.addEventListener('mouseover', () => {
-    document.querySelector('.switch-text').classList.toggle('show');
+switchBtn.addEventListener('mouseenter', () => {
+   
 })
 
