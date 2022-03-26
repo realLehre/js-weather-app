@@ -16,6 +16,7 @@ class UI{
         const current = data.current;
         const location = data.location;
 
+        // append weather data to UI elements
         this.conditionText.textContent = data.current.condition.text;
 
         this.temperature.innerHTML = `<span class="temp-unit celcius"
