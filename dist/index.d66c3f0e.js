@@ -30,5 +30,6 @@ document.getElementById('ad-info-text').addEventListener('click', ()=>{
     document.querySelector('.infos').classList.toggle('show');
     document.querySelector('.fa-angle-up').classList.toggle('show');
 });
+const switchBtn = document.querySelector('.switch');
 
 //# sourceMappingURL=index.d66c3f0e.js.map

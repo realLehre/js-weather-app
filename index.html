@@ -39,6 +39,10 @@
 
     <section id="main">
       <div id="main-container">
+        <div class="switch-btn">
+          <i class="fas fa-arrows-alt"></i>
+        </div>
+        <p id="switch-text">Change temperature unit</p>
         <div id="condition">
           <i class="fa fa-info-circle"></i>
           <p class="condition-text"></p>
@@ -46,9 +50,12 @@
 
         <div id="temp-main">
           <div class="temp">
-            <span id="celcius"
-              >30 <span id="deg">o <span id="unit">C</span></span></span
-            >
+            <span class="temp-unit switch celcius"
+              >30 <span class="unit">o <span class="sym">C</span></span>
+            </span>
+            <span class="temp-unit switch fahrenheit"
+              >30 <span class="unit">o <span class="sym">F</span></span>
+            </span>
           </div>
           <div class="temp-icon">
             <img id="temp-icon" alt="icon" />

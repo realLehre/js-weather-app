@@ -127,12 +127,41 @@ body {
 }
 
 #main-container {
+  position: relative;
   width: 100%;
   background: linear-gradient(-120deg, m.$left-grad, m.$right-grad);
   padding: 20px 20px;
   border-radius: 30px;
   box-shadow: -0px -0px 10px black, 0px 0px 10px black;
   @include m.flex(center, center, column);
+  z-index: 1;
+
+  & .switch-btn {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    cursor: pointer;
+
+    & i {
+      color: m.$bright-orange;
+      font-size: 1.2rem;
+    }
+  }
+
+  & #switch-text {
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    font-size: 0.8rem;
+    background: m.$bright-blue;
+    padding: 2px;
+    border-radius: 5px;
+    display: none;
+
+    &.show {
+      display: block;
+    }
+  }
 
   & #condition {
     margin-bottom: 0;
@@ -161,19 +190,39 @@ body {
       font-size: 5rem;
       font-weight: 900;
 
-      & #celcius {
+      & .temp-unit {
         @include m.flex(space-between, flex-start, row);
         @include m.secFont;
         font-size: map-get(m.$font-sizes, page-name);
         font-size: 5rem;
         font-weight: 900;
 
-        & #deg {
+        & .unit {
           @include m.mainFont;
           color: m.$bright-orange;
           z-index: 1;
           font-size: 1.5rem;
           transform: translateY(12px);
+          @include m.flex(center, flex-start, row);
+
+          & span {
+            font-size: 2.5rem;
+          }
+        }
+      }
+
+      & .celcius {
+        &.switch {
+          display: none;
+        }
+      }
+
+      & .fahrenheit {
+        transform: scale(0);
+        @include m.transition;
+
+        &.switch {
+          transform: scale(1);
         }
       }
     }
