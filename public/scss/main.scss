@@ -163,16 +163,17 @@ body {
 
       & #celcius {
         @include m.flex(space-between, flex-start, row);
-        @include m.mainFont;
-        font-size: 1.2rem;
-        font-weight: 600;
-        color: m.$bright-orange;
-        transform: translateY(20px);
+        @include m.secFont;
+        font-size: map-get(m.$font-sizes, page-name);
+        font-size: 5rem;
+        font-weight: 900;
 
-        & span {
+        & #deg {
+          @include m.mainFont;
+          color: m.$bright-orange;
           z-index: 1;
-          font-size: 2rem;
-          transform: translateY(3px);
+          font-size: 1.5rem;
+          transform: translateY(12px);
         }
       }
     }

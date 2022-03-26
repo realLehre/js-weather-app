@@ -193,7 +193,7 @@ body {
   display: flex;
 }
 
-#main-container #temp-main .temp {
+#main-container #temp-main .temp, #main-container #temp-main .temp #celcius {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
@@ -203,22 +203,12 @@ body {
   display: flex;
 }
 
-#main-container #temp-main .temp #celcius {
+#main-container #temp-main .temp #celcius #deg {
   color: #eeb436;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  font-family: Roboto, sans-serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  display: flex;
-  transform: translateY(20px);
-}
-
-#main-container #temp-main .temp #celcius span {
   z-index: 1;
-  font-size: 2rem;
-  transform: translateY(3px);
+  font-family: Roboto, sans-serif;
+  font-size: 1.5rem;
+  transform: translateY(12px);
 }
 
 #main-container #temp-main .temp-icon {
