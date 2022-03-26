@@ -409,19 +409,39 @@ body {
     font-size: 1.3rem;
     font-weight: 900;
 
-    & span {
+    & .temp-unit {
       @include m.flex(space-between, flex-start, row);
-      @include m.mainFont;
-      font-size: 0.6rem;
-      font-weight: 600;
-      color: m.$bright-orange;
-      margin-left: 3px;
-      transform: translateY(3px);
+      @include m.secFont;
+      font-size: map-get(m.$font-sizes, page-name);
+      font-size: 5rem;
+      font-weight: 900;
 
-      & span {
-        font-size: 0.9rem;
-        margin-left: 1px;
-        transform: translateY(2px);
+      & .unit {
+        @include m.mainFont;
+        color: m.$bright-orange;
+        z-index: 1;
+        font-size: 1.5rem;
+        transform: translateY(12px);
+        @include m.flex(center, flex-start, row);
+
+        & span {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    & .celcius {
+      &.switch {
+        display: none;
+      }
+    }
+
+    & .fahrenheit {
+      display: none;
+      @include m.transition;
+
+      &.switch {
+        @include m.flex(space-between, flex-start, row);
       }
     }
   }

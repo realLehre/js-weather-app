@@ -67,6 +67,6 @@ class UI{
             `
         })
 
-        this.morrowWeather.innerHTML = output;
+        // this.morrowWeather.innerHTML = output;
     }
 }
