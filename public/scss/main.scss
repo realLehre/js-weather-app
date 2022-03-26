@@ -134,26 +134,10 @@ body {
   box-shadow: -0px -0px 10px black, 0px 0px 10px black;
   @include m.flex(center, center, column);
 
-  & #period {
-    width: 100%;
-    @include m.flex(space-between, center, row);
-
-    & h5 {
-      font-size: map-get(m.$font-sizes, weather-name);
-    }
-
-    & p {
-      font-size: map-get(m.$font-sizes, additional);
-      @include m.secFont;
-      color: m.$bright-orange;
-    }
-  }
-
   & #condition {
-    margin: 15px auto;
     margin-bottom: 0;
     @include m.flex(center, center, row);
-    font-size: map-get(m.$font-sizes, info);
+    font-size: map-get(m.$font-sizes, weather-info);
     @include m.secFont;
     & i {
       color: m.$bright-orange;
