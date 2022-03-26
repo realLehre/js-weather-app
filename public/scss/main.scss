@@ -154,17 +154,13 @@ body {
 
   & .switch-text {
     position: absolute;
-    top: 45px;
-    left: 20px;
+    top: 25px;
+    left: 42px;
     font-size: 0.8rem;
     background: m.$bright-blue;
-    padding: 2px;
+    padding: 2px 3px;
     border-radius: 5px;
     display: none;
-
-    &.show {
-      display: block;
-    }
   }
 
   & #condition {

@@ -185,16 +185,12 @@ body {
 #main-container .switch-text {
   background: #3c78b0;
   border-radius: 5px;
-  padding: 2px;
+  padding: 2px 3px;
   font-size: .8rem;
   display: none;
   position: absolute;
-  top: 45px;
-  left: 20px;
-}
-
-#main-container .switch-text.show {
-  display: block;
+  top: 25px;
+  left: 42px;
 }
 
 #main-container #condition {
