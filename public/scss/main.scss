@@ -11,6 +11,7 @@ body {
   background: linear-gradient(to right, m.$left-grad, m.$right-grad);
 }
 
+// change location
 #location-input {
   position: fixed;
   top: 0;
@@ -113,11 +114,13 @@ body {
   }
 }
 
+// app display name
 #app-name {
   font-size: map-get(m.$font-sizes, page-name);
   text-align: center;
 }
 
+// main weather area
 #main {
   @include m.flex(center, center, row);
   max-width: 600px;
@@ -136,6 +139,7 @@ body {
   @include m.flex(center, center, column);
   z-index: 1;
 
+  //   change temperature unit
   & .switch-btn {
     position: absolute;
     top: 25px;
@@ -163,6 +167,7 @@ body {
     display: none;
   }
 
+  //   weather condition text
   & #condition {
     margin-bottom: 0;
     @include m.flex(center, center, row);
