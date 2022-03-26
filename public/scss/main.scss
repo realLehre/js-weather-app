@@ -183,6 +183,7 @@ body {
     }
   }
 
+  //   main temperature area: temperature plus icon
   & #temp-main {
     margin: 10px 0;
     width: 100%;
@@ -241,6 +242,7 @@ body {
     }
   }
 
+  //  city location details
   & #location {
     width: 100%;
     @include m.flex(center, center, row);
