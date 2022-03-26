@@ -159,7 +159,7 @@ body {
   border-radius: 30px;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 20px;
   display: flex;
   box-shadow: 0 0 10px #000, 0 0 10px #000;
@@ -261,6 +261,12 @@ body {
 #main-container #location i {
   color: #eeb436;
   margin-right: 5px;
+}
+
+#main-container .local-time {
+  margin-top: 15px;
+  font-family: Merriweather, serif;
+  font-size: .9rem;
 }
 
 #main-container .change-location {

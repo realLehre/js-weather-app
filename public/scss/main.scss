@@ -132,7 +132,7 @@ body {
   padding: 20px 20px;
   border-radius: 30px;
   box-shadow: -0px -0px 10px black, 0px 0px 10px black;
-  @include m.flex(center, flex-start, column);
+  @include m.flex(center, center, column);
 
   & #period {
     width: 100%;
@@ -212,6 +212,12 @@ body {
       color: m.$bright-orange;
       margin-right: 5px;
     }
+  }
+
+  & .local-time {
+    margin-top: 15px;
+    @include m.secFont;
+    font-size: map-get(m.$font-sizes, ad-weather-info);
   }
 
   & .change-location {
