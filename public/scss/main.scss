@@ -161,7 +161,7 @@ body {
       font-size: 5rem;
       font-weight: 900;
 
-      & span {
+      & #celcius {
         @include m.flex(space-between, flex-start, row);
         @include m.mainFont;
         font-size: 1.2rem;

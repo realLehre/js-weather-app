@@ -203,7 +203,7 @@ body {
   display: flex;
 }
 
-#main-container #temp-main .temp span {
+#main-container #temp-main .temp #celcius {
   color: #eeb436;
   flex-direction: row;
   justify-content: space-between;
@@ -215,7 +215,7 @@ body {
   transform: translateY(20px);
 }
 
-#main-container #temp-main .temp span span {
+#main-container #temp-main .temp #celcius span {
   z-index: 1;
   font-size: 2rem;
   transform: translateY(3px);
