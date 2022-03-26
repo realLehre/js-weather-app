@@ -21,8 +21,9 @@ class UI{
         this.icon.setAttribute('src', data.current.condition.icon);
 
         const time = location.localtime;
-        const timeNum = new Date(time).toLocaleTimeString();
-        this.localTime.textContent = location.localTime;
+        const timeNum = new Date(time).toLocaleTimeString().split('');
+        const rm = timeNum.splice(4,3);
+        this.localTime.textContent = timeNum.join('');
 
         this.latitude.innerHTML = `Lat: ${location.lat}`;
 

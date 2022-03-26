@@ -16,8 +16,9 @@ class UI {
         this.temperature.innerHTML = `${current.temp_c} <span>o <span>C</span></span>`;
         this.icon.setAttribute('src', data.current.condition.icon);
         const time1 = location.localtime;
-        const timeNum = new Date(time1).toLocaleTimeString();
-        this.localTime.textContent = location.localTime;
+        const timeNum = new Date(time1).toLocaleTimeString().split('');
+        const rm = timeNum.splice(4, 3);
+        this.localTime.textContent = timeNum.join('');
         this.latitude.innerHTML = `Lat: ${location.lat}`;
         this.location.innerHTML = `${location.name}, ${location.country}. <span id="lat">${this.latitude.innerHTML}</span>`;
         this.additionInfo.innerHTML = `
