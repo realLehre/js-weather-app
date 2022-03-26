@@ -5,6 +5,7 @@ class Storage{
         this.className = 'switch'
     }
 
+    // get local storage data
     getLocalstorage(){
         if(localStorage.getItem('city') == null){
             this.city = this.default;
@@ -17,6 +18,7 @@ class Storage{
         }
     }
 
+    // save weather location to local storage
     saveToLocalstorage(city, className){
         localStorage.setItem('city', city);
     }

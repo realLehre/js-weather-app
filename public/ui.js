@@ -63,6 +63,7 @@ class UI{
                 realTime = `${time}:00` 
             }
 
+            // append weather info
             output += `
                 <span class="weather">
                 <p class="time">${realTime}</p>
