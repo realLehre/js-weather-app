@@ -29,16 +29,37 @@ function showWeather() {
 document.getElementById('ad-info-text').addEventListener('click', ()=>{
     document.querySelector('.infos').classList.toggle('show');
     document.querySelector('.fa-angle-up').classList.toggle('show');
-}) // function saveToLocalstorage(city){
- //     let passedCity = city;
- //     getLocalstorage(passedCity);
- //    localStorage.setItem('city', city);     
- // }
- // function getLocalstorage(city){
- //     return localStorage.getItem('city')
- //         ? localStorage.getItem('Lagos')
- //         : localStorage.getItem(city)
- // }
-;
+});
+// date
+const dateToday = document.getElementById('date-today');
+const days = [
+    'Sun',
+    'Mon',
+    'Tue',
+    'Wed',
+    'Thur',
+    'Fri',
+    'Sat'
+];
+const todayDay = new Date().getDay();
+const dayName = days[todayDay];
+const todayDate = new Date().getDate();
+const months = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sept',
+    'Oct',
+    'Nov',
+    'Dec'
+];
+const todayMonth = new Date().getMonth();
+const monthName = months[todayMonth];
+dateToday.innerHTML = `<p id="date-today">${dayName}, ${todayDate} ${monthName}</p>`;
 
 //# sourceMappingURL=index.d66c3f0e.js.map
