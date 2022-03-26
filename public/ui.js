@@ -1,5 +1,6 @@
 class UI{
     constructor(){
+        // delcare UI elements
         this.conditionText = document.querySelector('.condition-text');
         this.temperature = document.querySelector('.temp');
         this.icon = document.getElementById('temp-icon');
@@ -11,6 +12,7 @@ class UI{
     }
 
     display(data) {
+        // get weather data from API
         const current = data.current;
         const location = data.location;
 
@@ -50,6 +52,7 @@ class UI{
             </li>
         `
 
+        // get tomorrow's weather info from API
         const forecast = data.forecast.forecastday[1].hour;
 
         let output = '';
