@@ -12,22 +12,24 @@ const ui = new UI();
 // display previous weather on page reload
 window.addEventListener('DOMContentLoaded', showWeather);
 
-// get change location input field
+// get change location input modal
 const modal = document.getElementById('location-input');
 const locationBtn = document.querySelector('.change-location');
 
 locationBtn.addEventListener('click', () => {
     modal.classList.add('open');
 })
-
+// get input field
 document.getElementById('city-form').addEventListener('submit', (e) => {
     const input = document.getElementById('city-form-input');
 
     weather.changeCity(input.value);
 
+    // save location input text to local storage
     storage.saveToLocalstorage(input.value);
 
-     showWeather();
+    // display weather in the web page/UI
+    showWeather();
 
     input.value = '';
 
