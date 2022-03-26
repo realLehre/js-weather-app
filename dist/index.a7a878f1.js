@@ -12,12 +12,11 @@ class UI {
     display(data) {
         const current = data.current;
         const location = data.location;
-        const time1 = location.localtime;
-        const timeNum = new Date(time1).toLocaleTimeString();
-        console.log(timeNum);
         this.conditionText.textContent = data.current.condition.text;
         this.temperature.innerHTML = `${current.temp_c} <span>o <span>C</span></span>`;
         this.icon.setAttribute('src', data.current.condition.icon);
+        const time1 = location.localtime;
+        const timeNum = new Date(time1).toLocaleTimeString();
         this.localTime.textContent = location.localTime;
         this.latitude.innerHTML = `Lat: ${location.lat}`;
         this.location.innerHTML = `${location.name}, ${location.country}. <span id="lat">${this.latitude.innerHTML}</span>`;
