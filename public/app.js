@@ -49,14 +49,31 @@ document.getElementById('ad-info-text').addEventListener('click', () => {
     document.querySelector('.fa-angle-up').classList.toggle('show');
 })
 
+let unit = localStorage.getItem('tempUnit'); 
+
+const units = document.querySelectorAll('.temp-unit');
+
+if(unit === 'switch'){
+    units.forEach(unit => {
+        unit.classList.add('switch');
+    })
+}
+
 function switchTemp() {
     const switchBtn = document.querySelector('.switch-btn');
 
     switchBtn.addEventListener('click', () => {
-        const units = document.querySelectorAll('.temp-unit');
-
-        units.forEach(unit => {
-            unit.classList.toggle('switch')
+        unit = localStorage.getItem('tempUnit');
+         
+              
+        units.forEach(unit => {        
+            if(!unit.classList.contains('switch')){
+                unit.classList.add('switch');
+                unit = localStorage.setItem('tempUnit', 'switch')
+            } else {
+                unit.classList.remove('switch');
+                unit = localStorage.setItem('tempUnit', null)
+            }
         })
     })
 }
