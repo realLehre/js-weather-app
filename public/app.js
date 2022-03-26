@@ -51,3 +51,7 @@ document.getElementById('ad-info-text').addEventListener('click', () => {
 
 const switchBtn = document.querySelector('.switch');
 
+switchBtn.addEventListener('mouseover', () => {
+    document.querySelector('.switch-text').classList.toggle('show');
+})
+

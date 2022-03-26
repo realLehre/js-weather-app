@@ -31,5 +31,8 @@ document.getElementById('ad-info-text').addEventListener('click', ()=>{
     document.querySelector('.fa-angle-up').classList.toggle('show');
 });
 const switchBtn = document.querySelector('.switch');
+switchBtn.addEventListener('mouseover', ()=>{
+    document.querySelector('.switch-text').classList.toggle('show');
+});
 
 //# sourceMappingURL=index.d66c3f0e.js.map
