@@ -97,8 +97,7 @@ body {
   & button {
     width: 100%;
     border: none;
-    background: linear-gradient(to left, m.$left-grad, m.$right-grad);
-    box-shadow: 1px 1px 10px black;
+    background: m.$bright-blue;
     padding: 10px;
     margin-top: 20px;
     border-radius: 5px;

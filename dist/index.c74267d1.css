@@ -122,7 +122,7 @@ body {
   width: 100%;
   color: #fff;
   cursor: pointer;
-  background: linear-gradient(to left, #313131, #191818);
+  background: #3c78b0;
   border: none;
   border-radius: 5px;
   margin-top: 20px;
@@ -130,7 +130,6 @@ body {
   font-family: Merriweather, serif;
   font-size: 1.2rem;
   transition: all 1s ease-in-out;
-  box-shadow: 1px 1px 10px #000;
 }
 
 .input-container button:hover {
