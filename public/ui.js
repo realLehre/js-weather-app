@@ -31,7 +31,7 @@ class UI{
 
         this.localTime.textContent = location.localtime;
 
-        this.latitude.innerHTML = `Lat: ${location.lat}`;
+        this.latitude.innerHTML = `Lat: ${location.lat} <sup>o</sup>`;
 
         this.location.innerHTML = `${location.name}, ${location.country}. <span id="lat">${this.latitude.innerHTML}</span>`;
 
