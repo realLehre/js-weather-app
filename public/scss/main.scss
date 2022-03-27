@@ -255,6 +255,16 @@ body {
       color: m.$bright-orange;
       margin-right: 5px;
     }
+
+    & #lat {
+      color: m.$bright-orange;
+      & sup {
+        @include m.mainFont;
+        font-weight: 500;
+        font-size: 0.8rem;
+        margin-left: -2px;
+      }
+    }
   }
 
   & .local-time {
