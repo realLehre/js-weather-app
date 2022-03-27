@@ -25,7 +25,7 @@ class UI {
             `;
         this.icon.setAttribute('src', data.current.condition.icon);
         this.localTime.textContent = location.localtime;
-        this.latitude.innerHTML = `Lat: ${location.lat} <sup>o</sup>`;
+        this.latitude.innerHTML = `Lat: ${location.lat}<sup>o</sup>`;
         this.location.innerHTML = `${location.name}, ${location.country}. <span id="lat">${this.latitude.innerHTML}</span>`;
         this.additionInfo.innerHTML = `
             <li class="info cloud">Cloud <span id="cloud-num">${current.cloud}</span></li>
