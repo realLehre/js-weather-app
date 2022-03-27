@@ -80,7 +80,7 @@ body {
   height: 3px;
   cursor: pointer;
   transform-origin: center;
-  background: red;
+  background: #eeb436;
 }
 
 .input-container .close-btn .dash.dash-1 {
