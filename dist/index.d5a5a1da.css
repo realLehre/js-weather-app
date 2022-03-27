@@ -111,7 +111,7 @@ body {
   padding: 10px 20px;
   font-family: Merriweather, serif;
   font-size: 1.2rem;
-  box-shadow: 1px 1px 5px #000;
+  box-shadow: 1px 1px 15px #000;
 }
 
 .input-container input::placeholder {
