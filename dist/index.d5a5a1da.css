@@ -294,7 +294,7 @@ body {
 }
 
 #main-container #location #lat sup {
-  margin-left: -2px;
+  margin-left: 2px;
   font-family: Roboto, sans-serif;
   font-size: .8rem;
   font-weight: 500;
