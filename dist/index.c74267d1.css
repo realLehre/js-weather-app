@@ -133,7 +133,7 @@ body {
 }
 
 .input-container button:hover {
-  color: #eeb436;
+  background: #eeb436;
   transform: scale(1.1);
 }
 
