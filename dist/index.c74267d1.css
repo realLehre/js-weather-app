@@ -103,7 +103,7 @@ body {
 .input-container input {
   width: 100%;
   color: #fff;
-  background: #3c78b0;
+  background: linear-gradient(to left, #313131, #191818);
   border: none;
   border-radius: 5px;
   outline: none;
