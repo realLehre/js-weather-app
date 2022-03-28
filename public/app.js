@@ -34,7 +34,7 @@ document.getElementById('city-form').addEventListener('submit', (e) => {
     input.value = '';
 
     modal.classList.remove('open');
-    
+
     e.preventDefault()  
 })
 

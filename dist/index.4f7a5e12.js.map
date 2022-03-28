@@ -1,0 +1,1 @@
+{"mappings":"AAAA,MAAM,MAAM,GAAG;IACX,KAAK,EAAE,iCAAiC;CAC3C","sources":["public/config.js"],"sourcesContent":["const config = {\r\n    forMe: 'bb7034c07f3a4831a76103340222303'\r\n}"],"names":[],"version":3,"file":"index.4f7a5e12.js.map","sourceRoot":"/__parcel_source_root/"}
