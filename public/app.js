@@ -34,6 +34,7 @@ document.getElementById('city-form').addEventListener('submit', (e) => {
     input.value = '';
 
     modal.classList.remove('open');
+    
     e.preventDefault()  
 })
 
@@ -56,34 +57,3 @@ document.getElementById('ad-info-text').addEventListener('click', () => {
     document.querySelector('.infos').classList.toggle('show');
     document.querySelector('.fa-angle-up').classList.toggle('show');
 })
-
-
-// // add unit change to local storage
-// let savedUnit = localStorage.getItem('tempUnit'); 
-
-// if(savedUnit === 'switch'){
-//     units.forEach(unit => {
-//         unit.classList.add('switch');
-//     })
-// }
-
-// // get btn for switching temperature unit
-// document.querySelector('.switch-btn').addEventListener('click', () => {
-//     console.log(1)
-//     savedUnit = localStorage.getItem('tempUnit');
-        
-//     units.forEach(unit => {        
-//         if(!unit.classList.contains('switch')){
-//             unit.classList.add('switch');
-//             savedUnit = localStorage.setItem('tempUnit', 'switch')
-//         } else {
-//             unit.classList.remove('switch');
-//             savedUnit = localStorage.setItem('tempUnit', null)
-//         }
-//     })
-// });
-
-
-
-
-

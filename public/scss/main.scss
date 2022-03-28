@@ -123,7 +123,7 @@ body {
 // main weather area
 #main {
   @include m.flex(center, center, row);
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
   margin-top: 35px;
   width: 95%;
@@ -302,7 +302,7 @@ body {
 // additional weather information
 #ad-info {
   @include m.flex(flex-start, flex-start, row);
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
   margin-top: 45px;
   width: 100%;
@@ -378,7 +378,7 @@ body {
 
 // tomorrow's weather
 #morrow {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
   width: 100%;
   overflow: hidden;
